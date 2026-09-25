@@ -275,12 +275,22 @@ def summarize(title, article_text):
             ],
             "temperature": 0.3,
             "max_tokens": 1000,
+            # DeepSeek "thinks" before answering by default. That thinking uses up
+            # max_tokens, which can leave the summary cut off or empty.
+            # A summary doesn't need deep thinking, so we turn it off (also faster + cheaper).
+            "thinking": {"type": "disabled"},
         },
         timeout=120,
     )
     response.raise_for_status()
     answer = response.json()["choices"][0]["message"]["content"]
-    return answer.strip()
+    answer = answer.strip()
+
+    # Safety check: never put an empty summary on the page
+    if answer == "":
+        raise Exception("DeepSeek sent back an empty summary")
+
+    return answer
 
 
 # ============================================================
