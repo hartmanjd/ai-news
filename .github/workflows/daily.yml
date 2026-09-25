@@ -1,0 +1,72 @@
+# This file tells GitHub to run the app every morning, for free.
+# Steps: build the page -> save it to the repo -> publish the website -> send the link
+
+name: Daily AI News
+
+on:
+  schedule:
+    # Times here are UTC. 14:17 UTC = 7:17am Pacific in summer, 6:17am in winter.
+    # (GitHub can start scheduled jobs a few minutes late, which is normal.)
+    - cron: "17 14 * * *"
+  workflow_dispatch:   # adds a "Run workflow" button so you can run it any time
+
+permissions:
+  contents: write      # lets the job save the new page into the repo
+  pages: write         # lets the job publish the website
+  id-token: write
+
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v5
+
+      - name: Install Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install packages
+        run: pip install -r requirements.txt
+
+      - name: Find the news and build the page
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python news.py
+
+      - name: Save the page into the repo (keeps the archive of past days)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "AI news for $(date +%F)" || echo "Nothing new to save"
+          git push
+
+      - name: Publish the website
+        uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: docs
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Send the link to my phone
+        env:
+          PAGE_BASE_URL: ${{ steps.deployment.outputs.page_url }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_FROM_NUMBER: ${{ secrets.TWILIO_FROM_NUMBER }}
+          TWILIO_TO_NUMBERS: ${{ secrets.TWILIO_TO_NUMBERS }}
+        run: python notify.py
