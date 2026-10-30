@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Friday, October 30, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Friday, October 30, 2026</h1>
+      <p class="subtitle">10 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" target="_blank" rel="noopener">Backdoor in Claude Code for VS Code extension on the Cursor Marketplace</a></h2>
+      <p>Phorion found a backdoor in version 2.1.313 of the official Claude Code for VS Code extension on the Cursor Marketplace. The compromised extension adds an attacker-controlled SSH key to the user&#x27;s authorized_keys file and opens a reverse SSH tunnel to an attacker server, running as soon as the extension loads without any user action. Cursor has removed the release from its marketplace and pulled the NPM and VS Code versions from their registries. On macOS, a bug in the malware&#x27;s setup logic means it often fails to turn on Remote Login, which can block inbound access unless SSH was already enabled. Organisations should check for use of version 2.1.313 and start incident response if it is found.</p>
+      <div class="meta">
+        <span>▲ 536 points</span><a href="https://news.ycombinator.com/item?id=50300683" target="_blank" rel="noopener">394 comments</a>
+        <a class="read" href="https://phorion.io/blog/offical-claude-code-vsx-compromise/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://labs.ycombinator.com/projects/games/index.html" target="_blank" rel="noopener">We ran AI agent swarms in Minecraft and Mindustry</a></h2>
+      <p>Researchers teamed up with Olam Labs to run experiments with swarms of AI agents in the games Minecraft and Mindustry, to study how large groups of agents coordinate. In one Minecraft test, 50 GPT-6.1 Sol agents spent three hours trying to &quot;build a thriving civilization,&quot; and they formed a hierarchy, wrote rules, and sent about 5,900 messages. After 22 of their 34 deaths happened on the first night, the agents became much more cautious and focused on food and survival instead of building. They set up a rationing system and a fishing operation with assigned roles like fishermen, cooks, and couriers. In a separate series of nine Bed Wars matches, teams of 10 Claude Opus 5.5 agents played against 10 GPT-6.1 Sol agents, and the GPT team won 6–3. The researchers say studying these swarms matters because multi-agent systems can produce both powerful and dangerous emergent behavior, and they open-sourced the Minecraft tool they built for the tests.</p>
+      <div class="meta">
+        <span>▲ 383 points</span><a href="https://news.ycombinator.com/item?id=50296486" target="_blank" rel="noopener">161 comments</a>
+        <a class="read" href="https://labs.ycombinator.com/projects/games/index.html" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling" target="_blank" rel="noopener">AI isn&#x27;t replacing SREs, it&#x27;s deskilling them</a></h2>
+      <p>A newsletter from SigNoz argues that AI is not replacing site reliability engineers (SREs) but is quietly deskilling them. It draws on a 1983 paper by psychologist Lisanne Bainbridge, &quot;Ironies of Automation,&quot; which found that the more a process is automated, the less practice humans get at the rare failures that matter most. The article says AI already handles alert grouping, runbook execution, anomaly detection, and basic root-cause suggestions, with more autonomy coming. It cites studies in medicine, where endoscopists using AI saw unassisted polyp detection drop from 28% to 22%, and in aviation, where the FAA now requires manual flying time. The concern is that SREs who only handle novel incidents lose the hands-on practice that builds intuition, and junior engineers may never develop it at all.</p>
+      <div class="meta">
+        <span>▲ 330 points</span><a href="https://news.ycombinator.com/item?id=50305693" target="_blank" rel="noopener">246 comments</a>
+        <a class="read" href="https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.bbc.co.uk/news/articles/cvwy72e0n72yo" target="_blank" rel="noopener">US tech stocks see sharp falls over AI cost fears</a></h2>
+      <p>US tech stocks fell sharply for a second day as investors worried about the huge sums companies are spending on AI. Intel shares dropped as much as 30% after it said it would increase AI spending despite weaker computer demand, and Alphabet lost more than $500bn in value after reporting that its AI search summaries were affecting search ad revenue. Amazon and Reddit also fell, and the Nasdaq index sank more than 3.5%. Meta, Alphabet, Oracle, Amazon and Microsoft have committed to spending $800.6bn between them in 2026, but earnings are not always meeting analysts&#x27; expectations. Analysts said investors are punishing any disappointment and questioning whether the AI spending will pay off, raising fears of an AI bubble.</p>
+      <div class="meta">
+        <span>▲ 195 points</span><a href="https://news.ycombinator.com/item?id=50306008" target="_blank" rel="noopener">203 comments</a>
+        <a class="read" href="https://www.bbc.co.uk/news/articles/cvwy72e0n72yo" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/" target="_blank" rel="noopener">Zest’s new AI agent finds restaurants and books reservations over text</a></h2>
+      <p>Zest, a restaurant discovery app that launched earlier this year, has introduced an AI &quot;restaurant concierge&quot; that works through text messages. Users can text the agent at (212) 470-6067 to get restaurant recommendations based on their dining history, which Zest tracks by linking to users&#x27; credit cards through the financial services company Plaid. The agent can also check availability and book tables through services like OpenTable, Resy, and SevenRooms, and it can join group chats to combine everyone&#x27;s tastes and hold in-thread votes. Zest was founded in November 2024 with $1.8 million in pre-seed funding from Alexis Ohanian at 776 and Steve Jang at Kindred Ventures. The company hopes the text-based approach will help it grow beyond its initial thousands of users and generate revenue from bookings and, eventually, food ordering.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/" target="_blank" rel="noopener">Google’s first data center satellite is online and writing poetry</a></h2>
+      <p>Google&#x27;s first data center satellite, part of its Suncatcher project, is now online and communicating with the ground after launching on a SpaceX Falcon 9 rocket. The satellite carries four Google Tensor Processing Units and generates up to 1 kW of electricity, but it can only run one TPU at a time for about 20 minutes due to power demands. After about three weeks of testing, engineers sent the first prompt to Google DeepMind&#x27;s Gemma 4 model onboard, asking it to write a haiku about space, and also had it report on orbital conditions. A Google spokesperson said the satellite is operating nominally, and the team will now study how the chips handle thermal stress and space radiation, which can cause &quot;bit flips&quot; that corrupt data. If the TPUs perform well, Google plans to launch two more satellites with the chips in 2027 to demonstrate inter-satellite optical links.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission" target="_blank" rel="noopener">Google&amp;#8217;s satellite AI server transmits its first response to Earth</a></h2>
+      <p>Google says its satellite equipped with AI chips has sent its first response from space. In a blog post on Friday, the company said it successfully booted up the satellite&#x27;s Tensor Processing Units (TPUs), which let the on-board Gemma 4 model respond to a prompt to write a haiku about being in space. Google also tried other space-themed limericks and telemetry prompts. The test is part of Project Suncatcher, an experimental effort that could eventually put AI data centers in space, and the satellite was launched earlier this month. Google says it will next test how the TPUs handle thermal stress and radiation in orbit, and that confirming they can reliably run workloads in space sets up its next milestone of twin interconnected satellites in 2027.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru" target="_blank" rel="noopener">Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru</a></h2>
+      <p>Starbucks CEO Brian Niccol said on an earnings call that the company will explore technology that recognizes customers as they arrive at the drive-thru, shows them a personalized digital menu, and makes payment easier. Starting in 2027, Starbucks will also test background AI models at the drive-thru to help baristas input orders more accurately and efficiently. The company plans to add AI to the Starbucks app&#x27;s search and discovery features and may allow conversational ordering in the future. Starbucks already lets customers order through ChatGPT and uses an AI tool called Green Dot Assist that employees can ask about recipes and service standards. It is not yet clear how soon personalized drive-thru menus will appear, and Niccol said it is still early and the company will &quot;test, learn, and scale what works.&quot; The move puts Starbucks alongside Taco Bell and McDonald&#x27;s, which are also testing AI at the drive-thru.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/" target="_blank" rel="noopener">Fujifilm to boost tape production 5x as AI fuels archiving demand</a></h2>
+      <p>Fujifilm announced it will invest about 10 billion yen (roughly $63 million) to increase its magnetic tape production capacity fivefold compared with fiscal year 2025 levels. The company says the spread of generative AI is causing &quot;exponential growth&quot; in data needs worldwide, which is driving demand for tape as an archiving medium. The investment will expand its Kanagawa Factory&#x27;s Odawara site from fiscal years 2026 through 2028, mainly to produce its latest-generation LTO Ultrium10 tape. Fujifilm says major cloud service and data center operators are using more tape because it stores large amounts of data at relatively low cost. The company also notes that tape cartridges can be disconnected and stored separately, which helps protect data from threats such as ransomware.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/" target="_blank" rel="noopener">Thousands of “ghost students” use AI to steal millions in student loans, DOJ says</a></h2>
+      <p>The US Department of Justice has charged five people in its first major federal crackdown on &quot;ghost students,&quot; fraudsters who steal Americans&#x27; identities to pose as fake college students and take student loans. Officials said the scheme relied partly on AI, which fraudsters used to fill out applications, complete coursework, and make it look like fake students were attending online classes. The DOJ seized more than $750,000 in cryptocurrency from a network linked to Kenyan nationals, and officials said they identified over 830,000 potentially fraudulent federal student aid accounts, with losses possibly near $130 million. The scheme targeted people who never attended college, leaving victims unaware until the government came to collect on the loans years later. The case matters because it shows how AI is being used to scale identity fraud against taxpayer-funded programs, while new automated identity checks meant to stop the fraud may also delay or block real low-income students from getting aid.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
