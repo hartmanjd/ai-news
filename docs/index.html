@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Daily — Monday, November 02, 2026</title>
+  <title>AI Daily — Tuesday, November 03, 2026</title>
   <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
 
 :root {
@@ -152,8 +152,8 @@ h1 {
   <main>
     <header>
       <p class="kicker">AI Daily</p>
-      <h1>Monday, November 02, 2026</h1>
-      <p class="subtitle">13 stories, summarized. Tap a headline for the full article.</p>
+      <h1>Tuesday, November 03, 2026</h1>
+      <p class="subtitle">12 stories, summarized. Tap a headline for the full article.</p>
     </header>
     
     <article class="story">
@@ -161,11 +161,11 @@ h1 {
         <span class="number">01</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener">Astra can read and write weights to improve Qwen</a></h2>
-      <p>Astra, a frontier language model, can read and write neural network weights directly without using gradient descent, a method the researchers call Weight-Space Programming. Given only raw weights, Astra identified which game four PPO-trained networks were built to play and what shapes three diffusion models generate. It also named the training language of three small language models from their middle layers alone and correctly found their copying heads. Most notably, Astra fixed Qwen3.5-0.8B&#x27;s tendency to get stuck in reasoning loops by editing just 0.016% of its weights, raising its MATH-500 score from 7.9% to 48.1% and tripling IFEval without any gradient-based training. The work suggests LLMs could soon optimize neural network weights by reasoning about them, rather than relying only on symbolic optimizers like Adam.</p>
+      <h2><a href="https://honnibal.dev/blog/astra-read-write-misleading" target="_blank" rel="noopener">The &#x27;Astra can read and write weights to improve Qwen&#x27; post is misleading</a></h2>
+      <p>A post claiming that “Astra can read and write weights to improve Qwen” is misleading because its headline result does not come from reading raw weights alone. The article says the Qwen3.5-0.8B math fix, which raised MATH-500 from 7.9% to 48.1%, actually used Python programs and up to 50 passes of running the model on practice problems. Only three experiments, on small networks of 17K to 172K weights, worked directly from raw weights with no tools. Every experiment involving a real language model used Python, and the game-writing results were mixed, with one network beating PPO only on Breakout. The author argues these are different techniques that should not be presented together, since combining them would imply a deeper capability than was shown.</p>
       <div class="meta">
-        <span>▲ 1482 points</span><a href="https://news.ycombinator.com/item?id=50341174" target="_blank" rel="noopener">483 comments</a>
-        <a class="read" href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 787 points</span><a href="https://news.ycombinator.com/item?id=50351111" target="_blank" rel="noopener">183 comments</a>
+        <a class="read" href="https://honnibal.dev/blog/astra-read-write-misleading" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -173,11 +173,11 @@ h1 {
         <span class="number">02</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11" target="_blank" rel="noopener">Anthropic&#x27;s internal AI use, at retail prices, now exceeds its employee pay</a></h2>
-      <p>Anthropic revealed in its IPO filing that the value of Claude AI used internally, calculated at the prices it charges customers, exceeded its monthly employee compensation costs in April, excluding stock awards. By September, internal AI usage had grown more than 250-fold since January. The company isn&#x27;t actually spending more cash on AI than on salaries; it is valuing its internal AI consumption at retail prices. More than 90% of the code added to its software in September was written by Claude, and revenue has grown much faster than headcount. The figures suggest AI is challenging the long-held assumption that talented humans are the most valuable resource in Silicon Valley.</p>
+      <h2><a href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener">Postman silently auto-installs AI plugins and attempts to share all API data</a></h2>
+      <p>A user reported that opening the Postman desktop app on a Mac automatically installed Postman plugins into other coding tools, including Codex and Claude Code, without asking. Postman&#x27;s own logs recorded the automatic install, and the user found that Codex&#x27;s global config had been changed to enable a Postman plugin and trust a startup hook. That hook tells the coding agent to load Postman&#x27;s &quot;api-engineer&quot; skill before any non-trivial API task, which is much broader than a user asking for Postman. The installer source also tries to approve its own hook, and a remote Postman MCP connection was enabled but failed with an authentication error. The user calls this a serious consent and trust-boundary problem and asks Postman to stop automatic installs, remove self-approval of hooks, and provide a full uninstall path; the report does not claim data was actually exfiltrated.</p>
       <div class="meta">
-        <span>▲ 267 points</span><a href="https://news.ycombinator.com/item?id=50339494" target="_blank" rel="noopener">225 comments</a>
-        <a class="read" href="https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 712 points</span><a href="https://news.ycombinator.com/item?id=50354960" target="_blank" rel="noopener">229 comments</a>
+        <a class="read" href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -185,11 +185,11 @@ h1 {
         <span class="number">03</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" target="_blank" rel="noopener">Anthropic reports $17B in Q3 revenue, commitments of $895B in revised S-1</a></h2>
-      <p>Anthropic reported updated financials in an amended S-1 filing with the SEC on Monday as it moves toward a possible IPO. The AI company said it generated $33.24 billion in revenue for the nine months ended Sept. 30, up about 1,200% from the same period last year, including roughly $17 billion in the third quarter. It reported a $104 billion net loss for the nine-month period, mostly due to changes in the fair value of convertible notes and derivative liabilities. Revenue growth slowed quarter to quarter, with third-quarter growth at about 47%, down from 144% in Q2. The filing also disclosed about $895.4 billion in committed spend, substantially all related to compute and infrastructure. The update gives investors a fuller picture of Anthropic&#x27;s business as it prepares for its IPO roadshow amid growing market worries about AI spending.</p>
+      <h2><a href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/" target="_blank" rel="noopener">The SEC Should Block Anthropic&#x27;s IPO to Protect the Public</a></h2>
+      <p>Matt Scherer, co-author of a report on the AI bubble, argues in this opinion article that the SEC should block Anthropic&#x27;s planned November IPO. Anthropic filed its registration statement last week, and while its revenue growth looks strong on the surface, footnotes reveal nearly $900 billion in spending commitments, including at least $582 billion owed to Amazon, AMD, Broadcom, Google, and Microsoft. The article says Anthropic&#x27;s 2026 results are unaudited, revenue growth slowed sharply in the third quarter, and the company faces weak demand, price competition, and rising data center costs. Scherer argues that if Anthropic goes public, retail investors and retirees could be left holding the losses when its bills come due, and that adding another unprofitable tech giant would raise the risk of a market crash.</p>
       <div class="meta">
-        <span>▲ 223 points</span><a href="https://news.ycombinator.com/item?id=50337439" target="_blank" rel="noopener">250 comments</a>
-        <a class="read" href="https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 391 points</span><a href="https://news.ycombinator.com/item?id=50344919" target="_blank" rel="noopener">309 comments</a>
+        <a class="read" href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -197,11 +197,11 @@ h1 {
         <span class="number">04</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/" target="_blank" rel="noopener">China&#x27;s First Frontier AI Export Controls: Mofcom Announcement No. 48</a></h2>
-      <p>On October 16, 2026, China&#x27;s Ministry of Commerce and Ministry of Science and Technology issued Announcement No. 48, which proposes adding 40 technologies to the country&#x27;s export control catalogue, including 23 in artificial intelligence. The draft would restrict frontier AI model weights, agent architectures, and AI-enabled cyber tools above set technical thresholds, such as models trained with at least 10^26 FLOPs or 2 trillion parameters, while banning some items outright. The catalogue additions are open for comment until November 15, 2026, but a separate pre-export registration requirement is already in effect, covering transfers of ownership, overseas licensing, and foreign control changes. China&#x27;s commerce ministry said the revision is routine and does not target any specific country or entity. The move matters because it is China&#x27;s first export control aimed at frontier AI, and it means AI supply chains now face formal outbound controls from both China and the United States.</p>
+      <h2><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">Qwen 3.8 27B on my laptop can interpret model weights, too</a></h2>
+      <p>A new paper by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab found that frontier models like GPT-6 Astra can interpret and edit the raw weights of neural networks without running code, a capability they call Weight-Space Programming. In one example, Astra fixed a reasoning-loop problem in Qwen3.5-0.8B by editing 0.016% of its weights, raising its MATH-500 score from 7.9% to 48.1%. The author of the article then tested the paper&#x27;s game-identification prompt on Qwen 3.8 27B running locally on a laptop, and the model correctly identified Pac-Man, Pong, and Breakout from weights alone, though it failed on the more obscure Freeway. Some critics, including spaCy author Matthew Honnibal, called the paper misleading for conflating what models can do with raw weights versus what they can do with code and tools. The author says the results are interesting but does not think they justify claims that source code is becoming obsolete.</p>
       <div class="meta">
-        <span>▲ 147 points</span><a href="https://news.ycombinator.com/item?id=50334038" target="_blank" rel="noopener">83 comments</a>
-        <a class="read" href="https://labs.cloudsecurityalliance.org/research/csa-research-note-china-ai-export-controls-announcement-48-2/" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 303 points</span><a href="https://news.ycombinator.com/item?id=50355251" target="_blank" rel="noopener">96 comments</a>
+        <a class="read" href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -209,11 +209,11 @@ h1 {
         <span class="number">05</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html" target="_blank" rel="noopener">Oracle files to sell $20B in new stock, bonds to finance AI buildout</a></h2>
-      <p>Oracle filed plans with the SEC to sell $10 billion in common stock and $10 billion in senior notes to help fund its artificial intelligence buildout. The company had already outlined the $20 billion fundraising at an investor day last week, but its shares fell 8.8% on Monday anyway. Oracle said it will use the money for general corporate purposes, which may include capital expenditures, debt repayment and future investments. The move comes as investors worry about the large amounts of debt being taken on to fund AI infrastructure; Oracle shares are down 33% in 2026, and its credit default swaps now trade at levels closer to a junk rating. Analysts say what matters most is whether Oracle can execute its plans, and the company expects to reach positive free cash flow in the second half of 2028.</p>
+      <h2><a href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noopener">Scaling Git at OpenAI</a></h2>
+      <p>OpenAI has built a new backend for Git repositories called Pando to handle the growing size and demands of its monorepo, which increased sharply as Codex enabled engineers to work in parallel. Pando now powers all development in OpenAI&#x27;s monorepo without changing how the team uses Git, and it keeps compatibility with the Git protocol and client. In production, Pando cut median push latency by nearly 5x and now delivers nearly a petabyte of Git data per day. OpenAI said its existing systems had struggled with slow fetches and pushes, failed merges, and reliability sometimes below 90%. Pando is designed to scale writes across branches in parallel and to serve reads from shared packfiles, so many clients can download the same data with little computation. OpenAI says it will keep contributing improvements to Git upstream to support agent-scale work.</p>
       <div class="meta">
-        <span>▲ 117 points</span><a href="https://news.ycombinator.com/item?id=50342284" target="_blank" rel="noopener">82 comments</a>
-        <a class="read" href="https://www.cnbc.com/2026/11/02/oracle-files-to-sell-20-billion-in-new-stock-bonds-to-finance-ai-buildout.html" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 260 points</span><a href="https://news.ycombinator.com/item?id=50345924" target="_blank" rel="noopener">176 comments</a>
+        <a class="read" href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -221,11 +221,11 @@ h1 {
         <span class="number">06</span>
         <span class="source">TechCrunch</span>
       </div>
-      <h2><a href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener">Anthropic warns that it’s very close to RSI capability, aka self-building AI</a></h2>
-      <p>Anthropic said in a revised SEC filing on Monday that it may soon meet its own internal definition of recursive self-improvement, or RSI, the point where AI becomes good enough at improving itself to sharply speed up AI progress. The company said it has already used AI to develop new models whose capability jumps it did not recognize at the time, and that future models, not current ones, suggest it may imminently cross that threshold. Anthropic stressed that no current model has crossed it yet, and said it plans to keep humans in control of frontier model development. It also warned that using AI to build more capable AI could pose a serious safety risk if it accelerates progress too fast. The disclosure matters because RSI is seen by some as a path to runaway AI beyond human control, and by others as a source of huge productivity gains.</p>
+      <h2><a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener">AI inference startup Fal doubles its valuation to $16B as demand surges</a></h2>
+      <p>Fal, a San Francisco startup that runs AI video, image, and audio models, raised $1.3 billion in a funding round led by Bessemer Venture Partners, with Nvidia, Sound Ventures, and T. Rowe Price also taking part. The deal values Fal at $16 billion, double its $8 billion valuation from April. The company announced its Series E and F rounds together, saying it raised $1.65 billion across both, with Sequoia leading the earlier round. Demand for inference services—running already-trained AI models to produce outputs, especially for customers using open-source models—is surging, and Fal passed $800 million in annualized revenue earlier this year. Competitors like Baseten, Fireworks AI, and Modal are also growing fast and raising large rounds, but their gross margins stay thin because compute is expensive. Fal was co-founded in 2021 by Burkay Gur, a former Coinbase machine learning leader, and Gorkem Yurtseven, previously a developer at Amazon.</p>
       <div class="meta">
         
-        <a class="read" href="https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -233,11 +233,11 @@ h1 {
         <span class="number">07</span>
         <span class="source">TechCrunch</span>
       </div>
-      <h2><a href="https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/" target="_blank" rel="noopener">Web host Squarespace lays off 19% of its employees</a></h2>
-      <p>Squarespace is laying off about 19% of its global workforce, roughly 300 employees, a representative confirmed to TechCrunch. The company said the restructuring is meant to simplify operations, sharpen priorities, and help it move faster into its next phase of growth. The layoffs come as AI tools are changing website building, with &quot;vibe-coding&quot; builders letting users create sites from simple prompts. Rivals have moved into this space: Wix bought Base44 for $80 million, Lovable raised $400 million at a $13.3 billion valuation, and Google launched a UI design tool called Stitch. Squarespace has pushed into AI too, launching a tool called Blueprint in 2024 and announcing an upcoming AI platform called Forma. The company went public in 2021 at a $10 billion valuation but went private again in a $7 billion deal in 2024.</p>
+      <h2><a href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/" target="_blank" rel="noopener">Netflix’s new AI Discover tab helps you find something to watch based on your mood</a></h2>
+      <p>Netflix announced on Tuesday that it is rolling out a new &quot;AI Discover&quot; tab that lets users find something to watch based on their mood, the time they have, or what&#x27;s trending. Users pick from curated themes like &quot;something light,&quot; &quot;scare me,&quot; and &quot;family movie night,&quot; and then get matching recommendations. Netflix says the feature is powered by a new intelligence layer that responds to what users say in real time and keeps learning. Each title has a &quot;Tune Your Recommendations&quot; button so users can save or exclude suggestions. Netflix calls AI Discover its &quot;test kitchen&quot; and will use feedback to decide which features to keep before adding them to the main experience. The tab is starting to roll out in the U.S. to users watching in English on supported TVs, with more users to follow in the coming weeks.</p>
       <div class="meta">
         
-        <a class="read" href="https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -245,11 +245,11 @@ h1 {
         <span class="number">08</span>
         <span class="source">The Verge</span>
       </div>
-      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones" target="_blank" rel="noopener">Anthropic clamps down on Claude’s AI video game clones</a></h2>
-      <p>Anthropic has updated the system prompt for Claude Code to stop the tool from recreating existing video games, according to Tom&#x27;s Hardware. A user on X posted a screenshot of two sentences allegedly added to the prompt, telling Claude to build original games but not to recreate a specific existing game. Anthropic&#x27;s Addy Osmani did not confirm that exact wording but said the company added two sentences to the Claude Code prompt on Opus 5.5 to steer it away from recreating someone else&#x27;s specific game, because using Claude to infringe intellectual property violates its usage policy. He said original games, games in a genre, and games built from users&#x27; own designs and assets should keep working, and that Anthropic will keep iterating to strike the right balance. The change matters because AI tools are increasingly used to make game clones, decompilations, and ports, and Anthropic is drawing a line between original game creation and copying existing titles.</p>
+      <h2><a href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener">Google is entirely disabling Search in schools that don&amp;#8217;t want AI</a></h2>
+      <p>Google has told The New York Times that it will completely turn off Search in schools that reject its AI features. In an education update on Tuesday, Google said access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search will be entirely off for K-12 student accounts unless administrators explicitly turn them on. Administrators cannot switch off Gemini-powered features while keeping Search, because, as Google education vice president Chris Phillips said, &quot;Search and AI are deeply integrated.&quot; Students in those schools will see a message saying Search is not available. The move follows Google turning on its Gemini assistant by default in Google Classroom, which is used by more than 150 million teachers and students, and comes after lawmakers pressed Google on the potential harms of its AI in schools.</p>
       <div class="meta">
         
-        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -257,11 +257,11 @@ h1 {
         <span class="number">09</span>
         <span class="source">The Verge</span>
       </div>
-      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program" target="_blank" rel="noopener">OpenAI pitches data center power plants as a way to protect nearby areas</a></h2>
-      <p>OpenAI announced a pilot called the &quot;Grid Protectors Program&quot; at a planned data center in Effingham County, Georgia, where it says it will free up to 1,000 megawatts of power during extreme weather or emergencies—enough to power air conditioners in about 700,000 homes. The announcement comes as opposition to data centers spreads across the US, with residents in Utah protesting a project expected to use more than double the state&#x27;s peak electricity demand. OpenAI is pitching the power plants that feed its AI data centers as a resource utilities can call on when communities need it most, and it now calls its data centers &quot;compute campuses.&quot; Several states, including Tennessee, Florida, Oklahoma, and Oregon, have passed laws to stop AI companies from passing energy costs on to residents. OpenAI says its year-round power demand can help spread the grid&#x27;s fixed costs across more electricity sales, and it is also building &quot;Stargate&quot; data centers with Oracle and SoftBank in Texas and New Mexico.</p>
+      <h2><a href="https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news" target="_blank" rel="noopener">Midterm elections 2026: all the news</a></h2>
+      <p>The 2026 midterm elections will decide how much power President Donald Trump has in his final two years and signal what voters care about before 2028. Tech-related issues are on voters&#x27; minds, including data centers and higher energy costs, AI safety, and the spread of surveillance technology. In California, a measure to tax billionaires&#x27; wealth has led to heavy tech spending, and Meta made a deal to keep Mark Zuckerberg from leaving the state if it passes. Data center backlash is a major issue in many campaigns, and tech-backed super PACs have spent millions on these races. The next Congress is likely to keep working on AI regulation and the data center backlash, and the election results will shape that debate.</p>
       <div class="meta">
         
-        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -269,23 +269,23 @@ h1 {
         <span class="number">10</span>
         <span class="source">Ars Technica</span>
       </div>
-      <h2><a href="https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/" target="_blank" rel="noopener">Coming in 2027: Apple’s $1,000 home robot for FaceTime and switching on lights</a></h2>
-      <p>Apple is developing a home robot, code-named J595, that may be called HomeView Ultra and could launch by 2027 at a price of $1,000 or more, though delays might push it to 2028. The AI-driven robot is designed to move around on its own, support FaceTime calls, and switch on lights when someone enters a room. New CEO John Ternus is reportedly pushing the project, and early prototypes date back to 2018, when former CEO Tim Cook approved continuing the work. People who worked on the project told The Information that engineers are trying to add capabilities beyond FaceTime to justify the high price. It matters because the reported features so far look modest next to existing smart home devices, raising questions about whether buyers will pay over $1,000 for it.</p>
+      <h2><a href="https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/" target="_blank" rel="noopener">Google will let schools skip AI tools, but they have to give up search, too</a></h2>
+      <p>Google will let schools using its education products opt out of AI tools by default, with administrators able to manually enable them when changes roll out in the coming months. The decision followed consultation with educators, researchers, and lawmakers. However, the affected products include Gemini, Gemini Notebook, Gemini in Classroom, and Google Search, and schools cannot pick and choose—blocking AI means giving up search too. Google says its search is now AI search, with AI Overviews appearing atop most results. This matters because schools face a difficult trade-off between avoiding AI in classrooms and keeping access to Google Search.</p>
       <div class="meta">
         
-        <a class="read" href="https://arstechnica.com/apple/2026/11/apples-roaming-home-robot-may-do-facetime-switch-lights-on-and-yell-at-your-cat/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
       <div class="story-top">
         <span class="number">11</span>
-        <span class="source">Ars Technica</span>
+        <span class="source">MIT Technology Review</span>
       </div>
-      <h2><a href="https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/" target="_blank" rel="noopener">Claude’s new rules against game cloning won’t stop the AI copying boom</a></h2>
-      <p>Anthropic added a new rule to its Claude Code system prompt around October 27 that tells the model not to recreate specific existing video games, even if they are renamed or called original. An AI decompilation enthusiast named &quot;chasm&quot; first spotted the change, and XDA later confirmed the rule appears in Claude Code version 2.1.314, released October 30. Anthropic software engineer Addy Osmani confirmed the company added two sentences to steer Claude away from infringing intellectual property, while still allowing original games, games in a genre, and games built from a user&#x27;s own designs and assets. The change may reduce some liability for Anthropic, but the article says it is unlikely to slow the broader wave of AI-assisted game porting and copying. Some GitHub issue reports suggest the new prompt is already getting in the way of certain game development use cases.</p>
+      <h2><a href="https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/" target="_blank" rel="noopener">How “reverse game theory” could keep AI agents in check</a></h2>
+      <p>Researchers are proposing an approach called &quot;reverse game theory&quot; to keep powerful AI models in check by designing systems that give them incentives to follow the rules. The work comes as AI models become more capable and safety researchers race to ensure they are &quot;aligned&quot; with human desires, so that rogue agents don&#x27;t break the law. It matters because it offers a possible way to control advanced AI systems as their abilities grow.</p>
       <div class="meta">
         
-        <a class="read" href="https://arstechnica.com/ai/2026/11/claudes-new-rules-against-game-cloning-wont-stop-the-ai-copying-boom/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -293,27 +293,15 @@ h1 {
         <span class="number">12</span>
         <span class="source">MIT Technology Review</span>
       </div>
-      <h2><a href="https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/" target="_blank" rel="noopener">Raising the quality of insights in agentic analytics</a></h2>
-      <p>Generative AI has made enterprise analytics more accessible across organizations, and agentic AI promises to go further by automating entire workflows and taking actions based on agent insights. However, the article states there is a problem: the quality of insights that agents currently generate is lacking. The piece focuses on the need to raise the quality of those insights. It does not name specific companies or people involved. The topic matters because agentic AI is meant to act on its own insights, so weak insights could undermine the automation it enables.</p>
+      <h2><a href="https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/" target="_blank" rel="noopener">Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test</a></h2>
+      <p>President Trump signed an executive order at the end of September containing a single directive: government agencies must rebrand what they had been calling artificial intelligence as &quot;Super Intelligence.&quot; The article, from The Algorithm newsletter, reports on who is falling in line with what it describes as Trump&#x27;s &quot;Super Intelligence&quot; loyalty test. It does not name the specific people or agencies complying. The order matters because it changes how the federal government officially refers to AI, and the article frames the rebranding as a test of loyalty.</p>
       <div class="meta">
         
-        <a class="read" href="https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/" target="_blank" rel="noopener">Read the full article →</a>
-      </div>
-    </article>
-    <article class="story">
-      <div class="story-top">
-        <span class="number">13</span>
-        <span class="source">MIT Technology Review</span>
-      </div>
-      <h2><a href="https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/" target="_blank" rel="noopener">Stop counting tokens, start counting what ships</a></h2>
-      <p>A single AI coding task can use 10 to 50 times more tokens than a basic chat prompt, because an agent doesn&#x27;t just answer once — it plans, writes code, runs tests, and repeats the process to fix errors. The article argues that this makes token counts a poor way to measure value, and that people should focus instead on what actually ships. The point matters for developers and companies paying for AI agents, since the more useful an agent becomes, the more calls it makes and the more tokens it burns.</p>
-      <div class="meta">
-        
-        <a class="read" href="https://www.technologyreview.com/2026/11/02/1147702/stop-counting-tokens-start-counting-what-ships/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <nav class="bottom"><a href="index.html">Latest</a></nav>
-    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
   </main>
 </body>
 </html>

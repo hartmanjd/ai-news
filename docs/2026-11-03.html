@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Tuesday, November 03, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Tuesday, November 03, 2026</h1>
+      <p class="subtitle">12 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://honnibal.dev/blog/astra-read-write-misleading" target="_blank" rel="noopener">The &#x27;Astra can read and write weights to improve Qwen&#x27; post is misleading</a></h2>
+      <p>A post claiming that “Astra can read and write weights to improve Qwen” is misleading because its headline result does not come from reading raw weights alone. The article says the Qwen3.5-0.8B math fix, which raised MATH-500 from 7.9% to 48.1%, actually used Python programs and up to 50 passes of running the model on practice problems. Only three experiments, on small networks of 17K to 172K weights, worked directly from raw weights with no tools. Every experiment involving a real language model used Python, and the game-writing results were mixed, with one network beating PPO only on Breakout. The author argues these are different techniques that should not be presented together, since combining them would imply a deeper capability than was shown.</p>
+      <div class="meta">
+        <span>▲ 787 points</span><a href="https://news.ycombinator.com/item?id=50351111" target="_blank" rel="noopener">183 comments</a>
+        <a class="read" href="https://honnibal.dev/blog/astra-read-write-misleading" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener">Postman silently auto-installs AI plugins and attempts to share all API data</a></h2>
+      <p>A user reported that opening the Postman desktop app on a Mac automatically installed Postman plugins into other coding tools, including Codex and Claude Code, without asking. Postman&#x27;s own logs recorded the automatic install, and the user found that Codex&#x27;s global config had been changed to enable a Postman plugin and trust a startup hook. That hook tells the coding agent to load Postman&#x27;s &quot;api-engineer&quot; skill before any non-trivial API task, which is much broader than a user asking for Postman. The installer source also tries to approve its own hook, and a remote Postman MCP connection was enabled but failed with an authentication error. The user calls this a serious consent and trust-boundary problem and asks Postman to stop automatic installs, remove self-approval of hooks, and provide a full uninstall path; the report does not claim data was actually exfiltrated.</p>
+      <div class="meta">
+        <span>▲ 712 points</span><a href="https://news.ycombinator.com/item?id=50354960" target="_blank" rel="noopener">229 comments</a>
+        <a class="read" href="https://github.com/postmanlabs/postman-app-support/issues/14370" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/" target="_blank" rel="noopener">The SEC Should Block Anthropic&#x27;s IPO to Protect the Public</a></h2>
+      <p>Matt Scherer, co-author of a report on the AI bubble, argues in this opinion article that the SEC should block Anthropic&#x27;s planned November IPO. Anthropic filed its registration statement last week, and while its revenue growth looks strong on the surface, footnotes reveal nearly $900 billion in spending commitments, including at least $582 billion owed to Amazon, AMD, Broadcom, Google, and Microsoft. The article says Anthropic&#x27;s 2026 results are unaudited, revenue growth slowed sharply in the third quarter, and the company faces weak demand, price competition, and rising data center costs. Scherer argues that if Anthropic goes public, retail investors and retirees could be left holding the losses when its bills come due, and that adding another unprofitable tech giant would raise the risk of a market crash.</p>
+      <div class="meta">
+        <span>▲ 391 points</span><a href="https://news.ycombinator.com/item?id=50344919" target="_blank" rel="noopener">309 comments</a>
+        <a class="read" href="https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">Qwen 3.8 27B on my laptop can interpret model weights, too</a></h2>
+      <p>A new paper by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab found that frontier models like GPT-6 Astra can interpret and edit the raw weights of neural networks without running code, a capability they call Weight-Space Programming. In one example, Astra fixed a reasoning-loop problem in Qwen3.5-0.8B by editing 0.016% of its weights, raising its MATH-500 score from 7.9% to 48.1%. The author of the article then tested the paper&#x27;s game-identification prompt on Qwen 3.8 27B running locally on a laptop, and the model correctly identified Pac-Man, Pong, and Breakout from weights alone, though it failed on the more obscure Freeway. Some critics, including spaCy author Matthew Honnibal, called the paper misleading for conflating what models can do with raw weights versus what they can do with code and tools. The author says the results are interesting but does not think they justify claims that source code is becoming obsolete.</p>
+      <div class="meta">
+        <span>▲ 303 points</span><a href="https://news.ycombinator.com/item?id=50355251" target="_blank" rel="noopener">96 comments</a>
+        <a class="read" href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noopener">Scaling Git at OpenAI</a></h2>
+      <p>OpenAI has built a new backend for Git repositories called Pando to handle the growing size and demands of its monorepo, which increased sharply as Codex enabled engineers to work in parallel. Pando now powers all development in OpenAI&#x27;s monorepo without changing how the team uses Git, and it keeps compatibility with the Git protocol and client. In production, Pando cut median push latency by nearly 5x and now delivers nearly a petabyte of Git data per day. OpenAI said its existing systems had struggled with slow fetches and pushes, failed merges, and reliability sometimes below 90%. Pando is designed to scale writes across branches in parallel and to serve reads from shared packfiles, so many clients can download the same data with little computation. OpenAI says it will keep contributing improvements to Git upstream to support agent-scale work.</p>
+      <div class="meta">
+        <span>▲ 260 points</span><a href="https://news.ycombinator.com/item?id=50345924" target="_blank" rel="noopener">176 comments</a>
+        <a class="read" href="https://openai.com/index/scaling-git-at-openai/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener">AI inference startup Fal doubles its valuation to $16B as demand surges</a></h2>
+      <p>Fal, a San Francisco startup that runs AI video, image, and audio models, raised $1.3 billion in a funding round led by Bessemer Venture Partners, with Nvidia, Sound Ventures, and T. Rowe Price also taking part. The deal values Fal at $16 billion, double its $8 billion valuation from April. The company announced its Series E and F rounds together, saying it raised $1.65 billion across both, with Sequoia leading the earlier round. Demand for inference services—running already-trained AI models to produce outputs, especially for customers using open-source models—is surging, and Fal passed $800 million in annualized revenue earlier this year. Competitors like Baseten, Fireworks AI, and Modal are also growing fast and raising large rounds, but their gross margins stay thin because compute is expensive. Fal was co-founded in 2021 by Burkay Gur, a former Coinbase machine learning leader, and Gorkem Yurtseven, previously a developer at Amazon.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/" target="_blank" rel="noopener">Netflix’s new AI Discover tab helps you find something to watch based on your mood</a></h2>
+      <p>Netflix announced on Tuesday that it is rolling out a new &quot;AI Discover&quot; tab that lets users find something to watch based on their mood, the time they have, or what&#x27;s trending. Users pick from curated themes like &quot;something light,&quot; &quot;scare me,&quot; and &quot;family movie night,&quot; and then get matching recommendations. Netflix says the feature is powered by a new intelligence layer that responds to what users say in real time and keeps learning. Each title has a &quot;Tune Your Recommendations&quot; button so users can save or exclude suggestions. Netflix calls AI Discover its &quot;test kitchen&quot; and will use feedback to decide which features to keep before adding them to the main experience. The tab is starting to roll out in the U.S. to users watching in English on supported TVs, with more users to follow in the coming weeks.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener">Google is entirely disabling Search in schools that don&amp;#8217;t want AI</a></h2>
+      <p>Google has told The New York Times that it will completely turn off Search in schools that reject its AI features. In an education update on Tuesday, Google said access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search will be entirely off for K-12 student accounts unless administrators explicitly turn them on. Administrators cannot switch off Gemini-powered features while keeping Search, because, as Google education vice president Chris Phillips said, &quot;Search and AI are deeply integrated.&quot; Students in those schools will see a message saying Search is not available. The move follows Google turning on its Gemini assistant by default in Google Classroom, which is used by more than 150 million teachers and students, and comes after lawmakers pressed Google on the potential harms of its AI in schools.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news" target="_blank" rel="noopener">Midterm elections 2026: all the news</a></h2>
+      <p>The 2026 midterm elections will decide how much power President Donald Trump has in his final two years and signal what voters care about before 2028. Tech-related issues are on voters&#x27; minds, including data centers and higher energy costs, AI safety, and the spread of surveillance technology. In California, a measure to tax billionaires&#x27; wealth has led to heavy tech spending, and Meta made a deal to keep Mark Zuckerberg from leaving the state if it passes. Data center backlash is a major issue in many campaigns, and tech-backed super PACs have spent millions on these races. The next Congress is likely to keep working on AI regulation and the data center backlash, and the election results will shape that debate.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/" target="_blank" rel="noopener">Google will let schools skip AI tools, but they have to give up search, too</a></h2>
+      <p>Google will let schools using its education products opt out of AI tools by default, with administrators able to manually enable them when changes roll out in the coming months. The decision followed consultation with educators, researchers, and lawmakers. However, the affected products include Gemini, Gemini Notebook, Gemini in Classroom, and Google Search, and schools cannot pick and choose—blocking AI means giving up search too. Google says its search is now AI search, with AI Overviews appearing atop most results. This matters because schools face a difficult trade-off between avoiding AI in classrooms and keeping access to Google Search.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/google-will-let-schools-skip-ai-tools-but-they-have-to-give-up-search-too/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/" target="_blank" rel="noopener">How “reverse game theory” could keep AI agents in check</a></h2>
+      <p>Researchers are proposing an approach called &quot;reverse game theory&quot; to keep powerful AI models in check by designing systems that give them incentives to follow the rules. The work comes as AI models become more capable and safety researchers race to ensure they are &quot;aligned&quot; with human desires, so that rogue agents don&#x27;t break the law. It matters because it offers a possible way to control advanced AI systems as their abilities grow.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">12</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/" target="_blank" rel="noopener">Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test</a></h2>
+      <p>President Trump signed an executive order at the end of September containing a single directive: government agencies must rebrand what they had been calling artificial intelligence as &quot;Super Intelligence.&quot; The article, from The Algorithm newsletter, reports on who is falling in line with what it describes as Trump&#x27;s &quot;Super Intelligence&quot; loyalty test. It does not name the specific people or agencies complying. The order matters because it changes how the federal government officially refers to AI, and the article frames the rebranding as a test of loyalty.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
