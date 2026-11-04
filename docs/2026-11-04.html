@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Wednesday, November 04, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Wednesday, November 04, 2026</h1>
+      <p class="subtitle">11 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability" target="_blank" rel="noopener">AI is forcing us to pay off 40 years of technical debt</a></h2>
+      <p>A critical vulnerability called PHP2Shell was found in PHP, a programming language created in 1994 and used by many legacy websites including those of NASA, Wikipedia, and the White House. The bug was originally reported to the PHP Foundation in 2024 as a minor memory error that only caused crashes, so it went unfixed. Earlier this year, a researcher at the cybersecurity firm Calif, sponsored by OpenAI and using AI tools, found that the bug could let attackers run malicious code on servers, and a patch was released before anyone exploited it. Experts say AI is now exposing security flaws in decades-old software faster than humans can fix them, and that fixing bugs is harder than finding them, putting strain on open-source projects like PHP. Some researchers warn that a more serious incident may be needed before the industry invests properly in fixes.</p>
+      <div class="meta">
+        <span>▲ 910 points</span><a href="https://news.ycombinator.com/item?id=50364336" target="_blank" rel="noopener">553 comments</a>
+        <a class="read" href="https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://arxiv.org/abs/2605.29713" target="_blank" rel="noopener">The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer</a></h2>
+      <p>A new book titled &quot;The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer&quot; has been posted on arXiv by Tianhua Chen, with a first version submitted on 28 May 2026 and a revised version on 8 September 2026. The book offers a compact, derivation-oriented introduction to the mathematics behind modern generative AI, rather than a survey of every recent architecture. It builds a connected path through major model families, including PCA, probabilistic PCA, variational autoencoders, diffusion models, normalising flows, autoregressive factorisations, GANs, Wasserstein GANs, and energy-based models. The stated goal is to make the structure of generative modelling more accessible while keeping the mathematical substance needed to understand how these models are derived and related. It is intended as a foundation-building primer for mathematically curious researchers, practitioners, and students.</p>
+      <div class="meta">
+        <span>▲ 379 points</span><a href="https://news.ycombinator.com/item?id=50358582" target="_blank" rel="noopener">59 comments</a>
+        <a class="read" href="https://arxiv.org/abs/2605.29713" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai" target="_blank" rel="noopener">Geoffrey Hinton: it might turn out we were better off without AI</a></h2>
+      <p>Geoffrey Hinton, a Nobel prize-winning computer scientist known as one of the “godfathers of AI,” told the Guardian that it might turn out humans would have been better off never developing the technology. He warned that a large-scale AI incident could happen this year or next, such as a temporary blackout of financial or power systems, and compared it to a warning shot before a Chornobyl-like event. Hinton, who quit Google in 2023 to speak freely about AI risks, said he does not trust OpenAI chief executive Sam Altman and believes leaders like Mark Zuckerberg, Elon Musk and Altman understand the risks but “don’t give a shit” because they would rather have the money. He backs mandatory testing of frontier AI models by an independent authority, similar to how the US FDA approves drugs, and criticized companies that want to release models first and deal with harm later. Despite his warnings, Hinton said he remains hopeful that catastrophe can be averted and that “we’re still in control.”</p>
+      <div class="meta">
+        <span>▲ 290 points</span><a href="https://news.ycombinator.com/item?id=50363554" target="_blank" rel="noopener">287 comments</a>
+        <a class="read" href="https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener">Progress on provable inference for large language models</a></h2>
+      <p>Anthropic researchers and collaborators have released FlashProve, an open-source prototype system for &quot;provable inference&quot; that uses cryptographic proofs called zkSNARKs to let users verify that a response came from the specific model a provider claims, without revealing the model&#x27;s weights. For a 400B-parameter model (Llama 4 Maverick in 4-bit quantization), a single H100 GPU generates proofs at around 110 tokens per second, with proof sizes of about 19 MB per 1,024-token request — roughly 70-95 times the GPU time needed to just run the model on vLLM. The team says prior open-source systems are orders of magnitude slower. Because Claude&#x27;s optimization decisions can be hard to evaluate, the team included top-level auditable statements in Lean, a formal verification language, to back the claimed security guarantees. They released five artifacts: the blog post, a technical report, a protocol specification, executable code (a prover and two verifiers, one in C++ and one provably correct in Lean), and Lean proofs with an interactive visualizer, all under the Apache 2.0 license. The work matters because users currently cannot confirm which model produced a response, and such proofs could support independent evaluators, customers using third-party routing services, and efforts to verify compliance with AI pacing requirements.</p>
+      <div class="meta">
+        <span>▲ 132 points</span><a href="https://news.ycombinator.com/item?id=50368626" target="_blank" rel="noopener">60 comments</a>
+        <a class="read" href="https://www.anthropic.com/research/provable-inference" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://uncracked.city" target="_blank" rel="noopener">Show HN: Uncracked City, detective game where you question LLM suspects that lie</a></h2>
+      <p>A new detective game called Uncracked City has been posted on Hacker News. In it, players question suspects powered by large language models, and some of those suspects lie. Players type or speak their own questions in any of six languages, and each suspect answers in its own voice. To catch a lie, the player holds a clue against a statement, and then writes a report with only three tries. The game has five training levels in cities like Paris and Tokyo, followed by harder real cases that most players have not solved yet. It matters because it shows a practical use for LLMs in games: characters that respond freely and can deceive the player.</p>
+      <div class="meta">
+        <span>▲ 119 points</span><a href="https://news.ycombinator.com/item?id=50358352" target="_blank" rel="noopener">61 comments</a>
+        <a class="read" href="https://uncracked.city" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/" target="_blank" rel="noopener">Open source AI is booming. Hugging Face explains who profits.</a></h2>
+      <p>On a recent episode of TechCrunch&#x27;s Equity podcast, host Rebecca Bellan spoke with Irene Solaiman, Chief Policy Officer and SVP of Strategy at Hugging Face, about open source AI. The discussion covered how open models are becoming more mainstream as enterprises, governments, and startups use them for lower costs, more control, and more flexibility. They also talked about how companies can capture value as capable models become more freely available, and whether American players can keep up as Chinese open models gain ground. Solaiman shared what startups should know before building on open models, including choosing the right tools and infrastructure and navigating trade-offs shaping open AI&#x27;s future. The conversation matters because it addresses the business side of the open source AI boom, not just the technology.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/" target="_blank" rel="noopener">DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy</a></h2>
+      <p>Google told schools they can turn off its Gemini AI, but said disabling its other AI features would also mean losing Google Search. DuckDuckGo, a privacy-focused search engine, is now pitching itself to schools as an alternative, with CEO Gabriel Weinberg pointing to documentation on how schools can switch their default search engine. DuckDuckGo&#x27;s public affairs chief, Kamyl Bazbaz, criticized Google, saying it was &quot;forcing AI on school children,&quot; and the company said Google could easily turn off Search&#x27;s AI features for schools if it wanted to. The move matters because Google dominates education, with around 50 million Chromebooks in schools and over 150 million Google Classroom users worldwide. Google defended its decision as a response to school feedback, saying Gemini, Gemini Notebook, and Search would be off by default and schools could enable them individually. DuckDuckGo also offers its own AI features but lets users disable them, and it reported earlier this year that app installs were up 30%.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system" target="_blank" rel="noopener">Gemini for Home now plugs into AT&amp;#038;T’s smart security system</a></h2>
+      <p>AT&amp;T’s Connected Life smart home security system now works with Gemini for Home, and AT&amp;T says it is the first home security product to integrate with Google Home Premium. The Gemini features can describe events caught by security cameras, such as who delivered a package and how many items they dropped off, and let users search recorded video with natural language questions. Users can also get daily summaries of activity inside and outside the home. These features require AT&amp;T’s professional Connected Life monitoring plan, which costs $29.99 per month. AT&amp;T is also adding automatic arming or disarming of the home based on how close you are to it. The update matters because it shows Google’s Gemini-powered Home APIs being used by smart home brands to build AI features into their devices, and ADT has hinted it may bring similar features to its systems.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei" target="_blank" rel="noopener">Nothing teases a screen-free AI device ahead of launch next month</a></h2>
+      <p>Nothing CEO Carl Pei said on X that the company will launch its first AI device in December, a little over a year after he announced plans for &quot;AI-native&quot; devices and an AI operating system. Pei gave few details but said the product has no screen and &quot;couldn&#x27;t have been an app,&quot; describing it as a tool built with the personality and care that define Nothing products. He shared an image with the word &quot;NOTHING(R)&quot; above an ambiguous black rounded corner. Rumors have suggested Nothing is planning AI smart glasses and repositioning itself as an AI-first company focused on AI accessories. Pei said the industry is hunting for &quot;its iPhone moment&quot; with pendants, pins, glasses and companions, but that &quot;looking for the iPhone of AI today is a dead end.&quot; The launch matters because it would make Nothing one of several companies betting that screen-free AI hardware can become a mainstream consumer product.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/" target="_blank" rel="noopener">Texas was the new epicenter of the AI data center buildout. That might be kaput.</a></h2>
+      <p>Democrat James Talarico won a US Senate seat in Texas, and Gina Hinojosa won the governor&#x27;s race against the Republican incumbent, according to the article. Texas had been the fastest-growing data center market in the US and the center of Big Tech&#x27;s largest AI buildouts. The article says the Democratic wins may put that position at risk. It does not give details on how the new leaders would affect data center projects. The outcome matters because Texas has been a major site for AI infrastructure, and a change in state leadership could affect those plans.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/" target="_blank" rel="noopener">Securing the agentic enterprise with data lineage</a></h2>
+      <p>A sales representative asks an AI agent for customer pricing, and the agent pulls data from restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses that data to draft a proposal, with no human checking either handoff. The article uses this scenario to argue that companies adopting AI agents need data lineage, which tracks where data comes from and how it moves between systems. It matters because when agents pass data to each other without human review, errors or misuse of restricted information can go unnoticed. Data lineage is presented as a way to secure this kind of &quot;agentic&quot; enterprise.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
