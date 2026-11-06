@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Friday, November 06, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Friday, November 06, 2026</h1>
+      <p class="subtitle">11 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://github.com/anthropics/claude-code/issues/107757" target="_blank" rel="noopener">Claude Code sends your email address to websites</a></h2>
+      <p>A user reported that Claude Code was sending their email address to third-party websites in the User-Agent header during web searches, which they said led to dozens of scam emails per day. The issue was filed on GitHub for macOS on version 2.1.318, and many commenters reacted critically to Anthropic. An Anthropic staff member responded that a built-in privacy plugin called cc-plugin-privacy, enabled by default, blocks this behavior starting in version 2.1.317. Other users then pointed out gaps: the plugin only matches the account email, so requests that include a project name but no address still pass, and one user said the email still leaked on version 2.1.319. The reporter said they were moving their company to Pi with OpenRouter over privacy concerns.</p>
+      <div class="meta">
+        <span>▲ 1526 points</span><a href="https://news.ycombinator.com/item?id=50385272" target="_blank" rel="noopener">479 comments</a>
+        <a class="read" href="https://github.com/anthropics/claude-code/issues/107757" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html" target="_blank" rel="noopener">Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue</a></h2>
+      <p>Mark Cuban said on the Pivot podcast that Meta runs deepfake ads using an AI copy of his face and voice to sell a fake $294 diabetes cure, and that he gets emails every week from people who believe they bought it. He called Facebook &quot;the worst of the worst&quot; and said the platform knows people are being ripped off. On Nov. 6, 2025, Reuters reported on internal Meta documents showing the company expected about $16 billion, roughly 10% of its 2024 revenue, from ads pushing scams and prohibited products, with users seeing about 15 billion &quot;higher risk&quot; ads a day. Meta spokesman Andy Stone disputed the figures, saying the documents distort Meta&#x27;s approach and that user complaints about scam ads fell 58% over 18 months. The documents also note the SEC is looking into Meta over advertising tied to financial fraud.</p>
+      <div class="meta">
+        <span>▲ 484 points</span><a href="https://news.ycombinator.com/item?id=50385870" target="_blank" rel="noopener">220 comments</a>
+        <a class="read" href="https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/" target="_blank" rel="noopener">Gemini Omni 1.2 Flash</a></h2>
+      <p>Google has released Gemini Omni 1.2 Flash, a new video generation model now generally available through the Gemini API and Gemini for business. It can create and edit videos natively up to 15 seconds long, up from 10 seconds in the previous version, and lets users refine clips through multi-turn conversation instead of starting over. The price dropped 30% from Omni 1.1 to $0.07 per second for 720p video, and users can draft at lower resolution and upscale to 1080p or 4K. The model also holds onto reference images, short motion clips, and audio cues more consistently, keeping faces, products, and brand colors stable across shots. Google says it is aimed at businesses, developers, and creators producing video at scale, and outputs carry a SynthID watermark.</p>
+      <div class="meta">
+        <span>▲ 252 points</span><a href="https://news.ycombinator.com/item?id=50392118" target="_blank" rel="noopener">199 comments</a>
+        <a class="read" href="https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL" target="_blank" rel="noopener">I struggle to believe that AI R&amp;D is ingenious</a></h2>
+      <p>The author writes that they have been monitoring side projects and finds the judgment of AI models to be poor in basic ways. As an example, they judged an Apart hackathon and reviewed eight papers that all scored between 60% and 95% on Pangram, and the papers were often very similar and methodologically incomplete, overlooking the most straightforward analysis. They say the important exception may be certain hill-climbing tasks with fast feedback loops, such as when they improved the state of the art on listing all legal Scrabble moves by 10x just by repeatedly prompting Astra to try harder and systematically try related methods. They also note that Astra, and presumably Claude, tends to write reports that are extremely difficult to understand, often requiring Q&amp;A interrogation to figure out what it actually did. The author adds that the Hanabi repository&#x27;s archival did not end the research, and that the key distinction is self-play versus cooperation with unfamiliar partners, so Hanabi remains useful for studying coordination rather than merely maximizing scores with copies of oneself.</p>
+      <div class="meta">
+        <span>▲ 162 points</span><a href="https://news.ycombinator.com/item?id=50388513" target="_blank" rel="noopener">168 comments</a>
+        <a class="read" href="https://www.lesswrong.com/posts/DALNiKBjMGMF8grme/arjun-panickssery-s-shortform?commentId=fJtaHHHfx45tD7BSL" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/" target="_blank" rel="noopener">Hundreds of Artex AI hacking tools found publicly exposed to the web</a></h2>
+      <p>Security researchers at the firm Censys found more than 800 copies of a Chinese-made AI hacking tool called Artex that were publicly accessible on the internet without a password. Artex is open-source software that automatically probes computer systems for weaknesses, and Microsoft has described it as a system of AI agents that can carry out cyberattacks with little human involvement. Censys researcher Silas Cutler said not every exposed copy is run maliciously, but it is unclear why so many are reachable online when the software does not require it. The exposure matters because Artex has been linked to real attacks, including against the Korean finance industry in September and against IT support giant ConnectWise in October, where hackers broke into customers&#x27; Microsoft cloud environments and stole data quickly. Many of these attacks exploited simple weaknesses like weak or known passwords and missing multi-factor authentication. Artex has since said it will go closed-source, but copies of its code remain available on code-sharing sites and can still be used in attacks.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/" target="_blank" rel="noopener">Meta introduces Spaces, a new way to collaborate with your Muse agent</a></h2>
+      <p>Meta has launched Spaces, a new feature for working with its Muse AI agents. Spaces are separate conversations in the sidebar of the Muse interface, each focused on one project like a vacation plan, gift tracker, or wedding planner. Users describe an idea in chat and Muse builds the space for them, and Spaces can connect to third-party apps so information like price changes or concert dates updates on its own. CEO Mark Zuckerberg posted on X that he has used Spaces to make a BBQ game, an event tracker, and a home control dashboard. The launch comes a week after Meta introduced Muse Voice for verbal commands, and Zuckerberg said in October that the agents had 10 million users in the U.S. and Canada. It matters because Meta is expanding what its agents can do as it competes with other AI agents like OpenAI&#x27;s dots and SpaceXAI&#x27;s Grokbot.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" target="_blank" rel="noopener">All the latest updates on AI data centers</a></h2>
+      <p>Massive new AI data centers are sparking fights worldwide over their effects on power grids, utility bills, nearby communities, and the environment. Data centers became a major bipartisan issue in the 2026 midterms, and 76 percent of voters polled by NBC News on Election Day said they opposed data centers in their communities. Tech giants like OpenAI and Amazon are promising to work more closely with local communities and cover their data center energy costs, and OpenAI said it will stop using non-disclosure agreements with public officials on data center projects. After the election, Democratic leaders are calling for further data center restrictions and slowdowns that AI companies will have to grapple with. A massive permitting bill with bipartisan support could speed up energy projects and potentially lower utility bills, but environmental advocates fear developers could use it to evade public scrutiny and rely more on fossil fuels.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1028871/meta-muse-ai-spaces" target="_blank" rel="noopener">Meta&amp;#8217;s Muse AI can create custom &amp;#8216;spaces&amp;#8217; for the version of the app you need right now</a></h2>
+      <p>Meta is adding a feature called &quot;spaces&quot; to its Muse AI assistant, letting users build customized, app-like experiences such as a shopping hub, school dashboard, music tracker, or trivia game inside the Muse app. Users create a space by describing it, and if they connect outside apps like Gmail, Google Calendar, OpenTable, or Notion, Muse pulls information from them to keep things like pricing and dates updated in the background. People can also check off items, add notes, and edit elements within their spaces, and they can choose where spaces appear in the app or schedule when they show up. Meta also said it is bringing new &quot;Active Memory&quot; and &quot;Active Focus&quot; capabilities from its Muse Wonder AI model into the Muse app and its Meta AI chatbot, which help Muse use past information when it becomes relevant and work better toward goals. Spaces are rolling out to all Muse users, and Meta says it is looking into ways for users to share and collaborate on spaces.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1028871/meta-muse-ai-spaces" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/" target="_blank" rel="noopener">“Does Meta think we can’t read?” Meta abandons sketchy commercial terms update.</a></h2>
+      <p>Meta has indefinitely delayed plans to update its commercial terms, which would have required Meta Business account users to allow extensive AI training on external websites linked on Facebook. A Meta spokesperson told Reuters the changes are paused while the company engages with stakeholders, and existing terms remain in effect. Legal experts had warned that the vague language could let Meta ignore robots.txt scraping preferences and crawl large amounts of off-Facebook content for AI training, potentially avoiding millions in licensing fees from news publishers. Businesses had no way to opt out, and the terms even required publishers to create test credentials so Meta&#x27;s bots could bypass paywalls. The changes, first set for October 30 and then pushed to November 20, drew pushback from users, courts, and regulators, with courts in Brazil and Norway issuing preliminary injunctions and the UK&#x27;s Competition and Markets Authority opening a formal investigation.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/does-meta-think-we-cant-read-meta-abandons-sketchy-commercial-terms-update/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/" target="_blank" rel="noopener">Could potential AI clones of GTA VI force a quicker official port?</a></h2>
+      <p>A former Rockstar technical director, Obbe Vermeij, says the threat of AI-assisted decompilation ports of GTA VI could push Rockstar to release an official PC version sooner. In an interview with Rock Paper Shotgun, Vermeij recalled that Rockstar has long treated PC as secondary to consoles, with PC ports often arriving months or years late. He noted that PC versions of Rockstar games have historically been delayed because console sales were much stronger. He described the PC-console relationship at Rockstar as &quot;awkward&quot; going back to the original Grand Theft Auto. The comments matter because they suggest outside modding and AI tools could change how quickly Rockstar serves PC players.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/gaming/2026/11/could-potential-ai-clones-of-gta-vi-force-a-quicker-official-port/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/" target="_blank" rel="noopener">I watched a humanoid robot clean my apartment. It felt like a taste of the future.</a></h2>
+      <p>A writer signed up for a new humanoid-robot cleaning service in San Francisco after seeing a post about it on X. The article describes the writer watching a humanoid robot clean their apartment. The writer does not normally pay for a house cleaner but signed up right away after learning about the service. The experience felt to the writer like a taste of the future. The article does not name the company behind the service or give details on how well the robot cleaned.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/06/1148090/i-watched-a-humanoid-robot-clean-my-apartment-it-felt-like-a-taste-of-the-future/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
