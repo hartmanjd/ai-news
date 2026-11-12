@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Thursday, November 12, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Thursday, November 12, 2026</h1>
+      <p class="subtitle">11 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://ipo.anthropic.com/us/" target="_blank" rel="noopener">Anthropic IPO</a></h2>
+      <p>Anthropic, an AI company that describes itself as a public benefit corporation focused on securing AI&#x27;s benefits and mitigating its risks, is preparing an initial public offering. The IPO roadshow starts November 10, with the final share price expected to be set November 18 and public trading on Nasdaq under the ticker &quot;ANT&quot; expected to begin November 19. The company reported $17.0 billion in revenue for Q3&#x27;26, more than 12 times its revenue a year earlier, along with a $23.3 billion net loss that it says includes a $21.9 billion non-cash charge tied to a rise in its valuation. Anthropic is offering Class A common stock, and investors must request shares through a participating brokerage, with no guarantee of receiving the shares they apply for. The offering matters because it would take one of the leading AI developers public, giving ordinary investors a direct stake in the company.</p>
+      <div class="meta">
+        <span>▲ 728 points</span><a href="https://news.ycombinator.com/item?id=50465829" target="_blank" rel="noopener">734 comments</a>
+        <a class="read" href="https://ipo.anthropic.com/us/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener">Gemini 4 Hydrogen</a></h2>
+      <p>Google has released Gemini 4 Hydrogen, a faster, lower-cost model in its Gemini 4 family, designed for everyday coding and agentic workflows rather than the deep reasoning handled by its siblings Carbon and Argon. Hydrogen scores 51 on the Artificial Analysis Intelligence Index at its default setting, slightly above Argon&#x27;s 50, and is priced at $1.50 per million input tokens and $7.50 per million output tokens across its 1 million-token context window. Google is also introducing Orchestrator in Google Antigravity, which automatically switches between models like Carbon and Hydrogen within a session, reaching near-Carbon task success on Terminal-Bench 4.0 while using 24% less quota and finishing 19% faster. Compared with Gemini 3.8 Flash, Hydrogen completes tasks 2.5 times faster at its default setting and more than triples its Terminal-Bench 4.1 score (57% vs. 18.2%). The model is rolling out across Google AI Studio, the Gemini API, the Gemini app, Google Search, and paid Google AI Pro and Ultra tiers.</p>
+      <div class="meta">
+        <span>▲ 370 points</span><a href="https://news.ycombinator.com/item?id=50471431" target="_blank" rel="noopener">244 comments</a>
+        <a class="read" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://github.com/hyperionaidev/smolmaxxing/" target="_blank" rel="noopener">I&#x27;m making LLMs work on small and old devices</a></h2>
+      <p>A project called smolmaxxing has released patches to llama.cpp that let large language models run on very small, old devices. The author tested it on a Xiaomi TV Box S (3rd Gen) with about 1 GB of usable RAM and a jailbroken 2013 iPad Air with about 700 MB usable, running models up to 16B parameters by keeping only part of each model in memory and streaming the rest from flash storage. On the TV box, a 16B Ling-mini-2.0 model ran at 5.1 tokens per second, and the iPad ran the same model at 2.6–4.5 tokens per second. The techniques include custom kernels for the chips, dropping rarely used vocabulary rows to save RAM, and paging mixture-of-experts weights from flash on demand. The code is MIT-licensed and the author says the methods should work on other Linux or Android devices with more model than RAM.</p>
+      <div class="meta">
+        <span>▲ 213 points</span><a href="https://news.ycombinator.com/item?id=50468888" target="_blank" rel="noopener">75 comments</a>
+        <a class="read" href="https://github.com/hyperionaidev/smolmaxxing/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/" target="_blank" rel="noopener">Gemini 4 Hydrogen and Orchestrator</a></h2>
+      <p>Google has rolled out Gemini 4 Hydrogen inside its Antigravity developer platform, along with a new model option called Orchestrator. Orchestrator pairs Hydrogen with Gemini 4 Carbon, switching between the two models as a task changes: Carbon plans and fixes problems, while Hydrogen writes edits and runs tests. Google says this approach reached near-Carbon task success on Terminal-Bench 4.1 while using 24% less quota and finishing 19% faster. Hydrogen also works on its own for everyday coding, scoring 51 on the Artificial Analysis Intelligence Index and 57% on Terminal-Bench 4.1. Hydrogen is rolling out to paid Google AI Pro and Ultra subscribers, while Orchestrator is rolling out to Ultra subscribers, and both are available to enterprises through Gemini for business.</p>
+      <div class="meta">
+        <span>▲ 160 points</span><a href="https://news.ycombinator.com/item?id=50472260" target="_blank" rel="noopener">29 comments</a>
+        <a class="read" href="https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/" target="_blank" rel="noopener">Nebius tests the neocloud playbook with $40 billion in planned spending</a></h2>
+      <p>Nebius announced plans to spend $40 billion in 2027, more than Wall Street expected, and said it would fund the buildout mainly through customer pre-payments and loans backed by customer contracts. The company reported third-quarter revenue of $981 million, up 571% from a year earlier, but cut its 2026 revenue forecast by $200 million to $3 billion because of delays at third-party data center sites. One of its largest customers is Microsoft, which has a contract worth up to $19.4 billion, but a Vineland, New Jersey site run by operator DataOne is months behind schedule, and only just over half of the Microsoft capacity is now planned for delivery by the end of the year. The delay came after DataOne wound down temporary gas generators faster than expected while switching to Bloom Energy fuel cells; New Jersey regulators had fined the facility $1.1 million for operating unpermitted generators. The situation matters because Nebius&#x27;s financing depends on hitting capacity on time, and Microsoft has been tightening oversight of third-party projects and pulling back from some deals. Nebius shares fell 17% after the earnings call.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/" target="_blank" rel="noopener">Jensen Huang was having a third affair, Reuters reports</a></h2>
+      <p>Nvidia founder Jensen Huang was having another affair with an employee that had not been reported before, Reuters said on Thursday. Huang stepped down as CEO and board member earlier today after news came out about affairs with accused spy Alice Huang and Nvidia VP of Health Care Kimberly Powell. CFO Colette Kress has taken over as interim CEO, and no permanent replacement has been named. Reuters is not naming the new employee, but says she works at Nvidia. Huang has been called to testify before Congress about the national security effects of his relationship with Alice Huang in the coming weeks, and his sudden fall is expected to have major effects on the industry.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/12/jensen-huang-was-having-a-third-affair-reuters-reports/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery" target="_blank" rel="noopener">No, AI agents did not discover a previously unknown Maya site</a></h2>
+      <p>Google researcher Pietro Miotti claimed this week that a team of AI agents had discovered a possibly unmapped Maya site in Mexico, but the site had already been documented in an academic journal more than a year earlier. Miotti, who said the project was a personal side project done without Google resources, used 48 AI agents to scan NASA lidar data and then asked Mexico&#x27;s National Institute of Anthropology and History whether the site was known; the institute said it had no record of it. Archaeologists criticized the claim online, noting that a site not being in a government database does not mean it is unknown, and that local communities often already know about such sites. Ivan Šprajc, a coauthor of the paper that documented the site, said archaeologists have used lidar for years and that &quot;just spotting something does not add much to our knowledge.&quot; Miotti acknowledged he is not an archaeologist and updated his post to credit the earlier work. The incident highlights a growing tension as amateurs use powerful AI tools in specialist fields without the expertise to check existing research.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1032125/ai-agents-maya-site-archeology-discovery" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video" target="_blank" rel="noopener">Oh, Palantir is ‘progressive’ now, is it?</a></h2>
+      <p>Palantir CEO Alex Karp told Politico that he has been a Democrat his whole life and that Palantir&#x27;s products are &quot;essentially progressive.&quot; The article contrasts this with a list of Karp&#x27;s past public statements, including calling Palantir &quot;the first company to be completely anti-woke,&quot; saying it helps the U.S. military &quot;make America more lethal,&quot; and quoting a scholar on &quot;organized violence.&quot; It also cites him saying he spends time talking to &quot;real Nazis&quot; and that he would leave the Democratic Party if its &quot;Mamdani wing&quot; took over. The piece argues Karp&#x27;s progressive claim conflicts with his recent rhetoric, and it matters because it questions whether Palantir&#x27;s political rebranding is credible.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1032126/alex-baby-you-were-recorded-on-video" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/" target="_blank" rel="noopener">Ars Live: What drone attacks on data centers mean for modern life in the cloud</a></h2>
+      <p>Drone and missile strikes this year have badly damaged data centers in Eastern Europe and the Middle East, disrupting cloud services for millions of people and permanently deleting some Amazon Web Services customer data. The article says this is a new concern for Big Tech, governments, and anyone who relies on common digital services. Ars will host a live conversation on Tuesday, November 17 at 1 pm ET with Joseph Jarnecki, a senior research fellow at the UK defense and security think tank RUSI. Jarnecki studies how cloud services relate to national security and has researched Ukraine&#x27;s cloud resilience and Iran&#x27;s strikes on Amazon data centers in the Middle East. The discussion matters because modern life depends heavily on cloud services that can now be damaged by physical attacks.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/gadgets/2026/11/ars-live-can-the-cloud-survive-drone-strikes-on-data-centers/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/" target="_blank" rel="noopener">Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash</a></h2>
+      <p>Google has released Gemini 4 Hydrogen, a new model that replaces Gemini 3.8 Flash across its products. Unlike Google&#x27;s recent Argon and Carbon releases, which started with limited access and were restricted to top-tier subscribers, Hydrogen is available immediately with looser limits. Google says Hydrogen is 2.5 times faster than Flash 3.8 even in its high thinking mode, and it cuts fabricated claims by more than 5x. It also more than triples Flash 3.8&#x27;s score on the Terminal-Bench coding test, and in xhigh mode it scored 54 on the Artificial Analysis Intelligence Index, above Argon&#x27;s 50. The change matters because Flash models are what most people in Google&#x27;s ecosystem actually use day to day.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener">Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility</a></h2>
+      <p>Nvidia privately told Illinois Representative Bill Foster that it would be technically possible to carry out the anti-smuggling measures required by the Chip Security Act, Foster said in an interview with MIT Technology Review. This came even as an industry group publicly called the measures &quot;potentially infeasible.&quot; Foster, a Democrat on a House committee, is involved because the bill would require chip tracking to fight smuggling. The contrast matters because it shows Nvidia saying one thing in private and the industry saying another in public about whether the tracking can work.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
