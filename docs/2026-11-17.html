@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Tuesday, November 17, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Tuesday, November 17, 2026</h1>
+      <p class="subtitle">10 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" target="_blank" rel="noopener">How the Claude Code team thinks about verification</a></h2>
+      <p>The Claude Code team at Anthropic says about 90% of its code is now written and reviewed by Claude, and it relies on verification loops to let many agents work in parallel instead of checking everything by hand. The team says giving agents a way to check their own output improves quality, and in internal testing a separate grader checking Claude&#x27;s work against a rubric raised task success by up to 10 points, with the biggest gains on the hardest problems. The article recommends three test types: end-to-end tests that run real user flows, property tests that generate many inputs to catch edge cases, and differential tests that compare an old system with a new one on the same inputs. It warns that flaky or slow tests teach agents to rerun tests instead of fixing code. The team also uses a 39-item reliability checklist, a REVIEW.md file, and rules that a change cannot edit the checks that judge it.</p>
+      <div class="meta">
+        <span>▲ 236 points</span><a href="https://news.ycombinator.com/item?id=50529612" target="_blank" rel="noopener">185 comments</a>
+        <a class="read" href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://nitter.cf/kevinnbass/status/2099621874279817638" target="_blank" rel="noopener">Regulatory Capture by Anthropic Through METR</a></h2>
+      <p>An audit posted online accuses Anthropic of building a &quot;regulatory capture machine&quot; and calls for a Congressional investigation. The author argues that the AI safety group METR, which Anthropic&#x27;s Dario Amodei has proposed as a third-party evaluator of its models, is financially dependent on Anthropic&#x27;s success. The claim rests on an Anthropic stock stake donated by Dustin Moskovitz to the Good Ventures Foundation, which the author says grew from about $500 million to more than $7.7 billion in roughly 16 months and funds METR and other groups. The author also says the same funders back organizations that publish AI-doom warnings, so the evaluator is not independent and cannot be trusted to assess Anthropic&#x27;s models. The article cites IRS filings and Forbes reporting, though its own notes say the foundation&#x27;s filings do not name an Anthropic holding.</p>
+      <div class="meta">
+        <span>▲ 137 points</span><a href="https://news.ycombinator.com/item?id=50530450" target="_blank" rel="noopener">72 comments</a>
+        <a class="read" href="https://nitter.cf/kevinnbass/status/2099621874279817638" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noopener">Claude Mythos slashed software work to onboard AMD GPUs to around three days</a></h2>
+      <p>Anthropic told investors in its IPO roadshow that its Claude Mythos Preview model did the software work needed to run one of its AI models on AMD MI355X GPUs in about three days, with basically no human intervention, a job it says used to take six to 12 months with dozens of engineers. The three days covered prompt processing for one model at a useful level of performance, and Mythos ported or wrote almost 100% of the kernels, the low-level code that ties a model to a chip. That kind of code has long been part of Nvidia&#x27;s CUDA moat, so an AI that can write it in days suggests the moat is eroding. Anthropic co-founder Tom Brown made the comparison, and the company&#x27;s prospectus says it can onboard new chip platforms in a fraction of the time it once took. Anthropic has not said how fast the model ran on AMD chips versus Nvidia&#x27;s, which is the comparison needed to show whether AMD hardware with AI-written code can match Nvidia.</p>
+      <div class="meta">
+        <span>▲ 52 points</span><a href="https://news.ycombinator.com/item?id=50526264" target="_blank" rel="noopener">21 comments</a>
+        <a class="read" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://newsletter.posthog.com/p/decision-models" target="_blank" rel="noopener">Not Everything Needs an LLM</a></h2>
+      <p>PostHog, a software company, has published what it learned from using decision models—smaller AI models that return typed answers with probability scores instead of free-form text—in production. The company uses these models to filter out most requests before they reach an expensive LLM: in its Replay Vision product, 98.7% of session summaries skip the LLM call entirely because a decision model checks them first. PostHog also uses decision models to route requests to the cheapest suitable model and to pick charts for SQL queries, and it found they are up to 444.6x cheaper and 193.6x faster than frontier models. The company warns that probability scores are not guarantees—a score of 0.85 still means about 150 wrong answers per 1,000 checks—so thresholds should be set based on which mistake costs more. It also found decision models fail at multi-step reasoning and open-ended ranking tasks, which should be left to LLMs. The takeaway matters for AI users: simple, checkable tasks can be handled by small models at a fraction of the cost, reserving LLMs for jobs that truly need them.</p>
+      <div class="meta">
+        <span>▲ 40 points</span><a href="https://news.ycombinator.com/item?id=50535740" target="_blank" rel="noopener">6 comments</a>
+        <a class="read" href="https://newsletter.posthog.com/p/decision-models" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/" target="_blank" rel="noopener">SEC reportedly investigating Nvidia amid Huang exit</a></h2>
+      <p>The SEC has opened a civil investigation into Nvidia over whether its disclosures misled investors, according to The Wall Street Journal. The probe follows the resignation of CEO Jensen Huang after news of his extramarital affairs, including one with Alice Huang, an executive at Singapore-based Megaspeed who is alleged to be a Chinese spy. The Commerce Department has been investigating Megaspeed since late 2024 over suspicions it diverted Nvidia chips to China, which would violate U.S. export laws. Congress has demanded Huang answer questions about how the affair may have affected his stance on loosening export restrictions, and Treasury Secretary Scott Bessent accused Nvidia of knowingly selling powerful chips to China to boost revenue. Nvidia&#x27;s stock has fallen more than 10% since Huang departed, even as the company reported revenue of $115.8 billion, up 103% from a year ago.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/" target="_blank" rel="noopener">Google joins the tech outage trend by announcing it’s not having one</a></h2>
+      <p>Google posted on X on Tuesday saying Gmail was running normally and that it saw no evidence of a broad Gmail disruption, pointing users to its real-time status dashboard. The statement came as reports of a Gmail outage spread on X around the same time Apple was having verified outages of its own; the concerns appeared to stem from a Downdetector post, and Downdetector is a crowdsourced site, not an official source for confirming outages. The fact that Google had to deny an outage shows growing anxiety about the reliability of major tech services, after a week in which Apple and Microsoft had outages, an FAA network failure caused a nationwide ground stop, and some banks and airlines reported disruptions. Director of National Intelligence Jay Clayton said on Fox Business that the U.S. is not facing coordinated or state-sponsored cyberattacks, and attributed the rise in problems to companies patching their systems, possibly because newer AI models are better at finding unknown vulnerabilities. He said patching is happening at a much larger scale than before, and some systems are &quot;not coming back as expected in all cases.&quot;</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang" target="_blank" rel="noopener">Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing</a></h2>
+      <p>Nvidia reported third-quarter revenue of $115.8 billion, up 103 percent from a year earlier and above its own forecast of $108 billion. Data center revenue rose 110 percent to $107.6 billion, and the company posted a record profit of $65.3 billion. Interim CEO Colette Kress announced the results, while board chair Harvey Jones said the board does not intend to reinstate former CEO Jensen Huang and would not take questions about his resignation or the ongoing investigation. Nvidia said it expects fourth-quarter revenue of $130 billion. The results matter because they show Nvidia&#x27;s data center business still growing fast even as the company faces questions about its leadership.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake" target="_blank" rel="noopener">Not even Sam Altman is safe from AI deepfakes on Instagram</a></h2>
+      <p>Alexandr Wang, Meta&#x27;s chief AI officer, posted an AI-generated video on Instagram in November to promote Muse, Meta&#x27;s consumer AI agent. The clip shows a fake video call with Wang, Mark Zuckerberg, Sam Altman, and Muse&#x27;s mascot, with Altman dressed as the mascot. The post is labeled as AI content, which Meta&#x27;s policy requires for AI videos of real people, though static images have no such rule. The article notes this comes as Instagram faces criticism over AI-generated images of public figures, including actress Mia Goth. It matters because a top executive at a major tech company is posting deepfaked content of a competitor, and because Meta&#x27;s labeling rules cover videos but not images.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/" target="_blank" rel="noopener">“Trump was in bed with Jensen”: Critics balk at Huang’s wish to return to Nvidia</a></h2>
+      <p>Trucks with billboards drove around Washington, DC, urging Congress to investigate the Trump administration&#x27;s ties to Nvidia CEO Jensen Huang, created by the nonprofit Tech Oversight Project. Trump supports bringing Huang back as CEO even though many Republicans call it a bad idea, and Huang said he would be &quot;honored&quot; to return, but Nvidia&#x27;s board said reinstatement is not under consideration while an internal investigation into US spying claims continues. Questions have been raised about what Trump knew and when regarding Huang&#x27;s potential exposure to a Chinese spy, and critics accuse the administration of corruption. Sen. Richard Blumenthal and other lawmakers plan to investigate, and the Tech Oversight Project also raised concerns about possible conflicts of interest for former White House AI Czar David Sacks and Commerce Secretary Howard Lutnick. The article reports that Trump has bought millions of dollars worth of Nvidia shares since returning to office, and critics say officials may have profited from policies allowing Nvidia to sell chips to China.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/" target="_blank" rel="noopener">Google makes it easier to use Gemini without training AI on your data</a></h2>
+      <p>Google is rolling out new settings in the Gemini app that separate your chat history from AI training. Before this change, the only way to stop Google from training on your chats was to turn off your history, which meant you couldn&#x27;t return to past conversations. Now users get two separate toggles: one for chat history and one for model training. The training toggle is opt-out, so you have to find it under Activity in Gemini settings or through your Google account&#x27;s Data and Privacy menu to block Google from using your chats. The change only applies to future interactions, since data you&#x27;ve already given Google is already part of its training data, which the company may keep for up to three years. This matters because it gives users a way to keep using Gemini&#x27;s basic features without handing over as much data for training.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
