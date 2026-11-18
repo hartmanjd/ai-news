@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Daily — Tuesday, November 17, 2026</title>
+  <title>AI Daily — Wednesday, November 18, 2026</title>
   <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
 
 :root {
@@ -152,8 +152,8 @@ h1 {
   <main>
     <header>
       <p class="kicker">AI Daily</p>
-      <h1>Tuesday, November 17, 2026</h1>
-      <p class="subtitle">10 stories, summarized. Tap a headline for the full article.</p>
+      <h1>Wednesday, November 18, 2026</h1>
+      <p class="subtitle">12 stories, summarized. Tap a headline for the full article.</p>
     </header>
     
     <article class="story">
@@ -161,11 +161,11 @@ h1 {
         <span class="number">01</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" target="_blank" rel="noopener">How the Claude Code team thinks about verification</a></h2>
-      <p>The Claude Code team at Anthropic says about 90% of its code is now written and reviewed by Claude, and it relies on verification loops to let many agents work in parallel instead of checking everything by hand. The team says giving agents a way to check their own output improves quality, and in internal testing a separate grader checking Claude&#x27;s work against a rubric raised task success by up to 10 points, with the biggest gains on the hardest problems. The article recommends three test types: end-to-end tests that run real user flows, property tests that generate many inputs to catch edge cases, and differential tests that compare an old system with a new one on the same inputs. It warns that flaky or slow tests teach agents to rerun tests instead of fixing code. The team also uses a 39-item reliability checklist, a REVIEW.md file, and rules that a change cannot edit the checks that judge it.</p>
+      <h2><a href="https://nicolasbouliane.com/blog/death-by-ai" target="_blank" rel="noopener">AI is killing All About Berlin</a></h2>
+      <p>Nicolas Bouliane, who has run the website All About Berlin since 2017, says the site has lost 70 to 75 percent of its traffic to Google&#x27;s AI Overviews. He says Google now shows ads and an AI-generated answer trained on his content before linking to his site, which he says has hurt his income and forced him to look for another way to pay his rent. He also says the loss goes beyond money, because his guides are used by Berlin&#x27;s immigration office and inspired government portals, and AI answers now blend his work into a generic response. He says other website owners have reported similar problems, with some paywalling their work and others no longer updating their sites. He warns the situation may get worse after Google announced that AI-generated answers will replace search results entirely and include ads.</p>
       <div class="meta">
-        <span>▲ 236 points</span><a href="https://news.ycombinator.com/item?id=50529612" target="_blank" rel="noopener">185 comments</a>
-        <a class="read" href="https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 741 points</span><a href="https://news.ycombinator.com/item?id=50542705" target="_blank" rel="noopener">669 comments</a>
+        <a class="read" href="https://nicolasbouliane.com/blog/death-by-ai" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -173,11 +173,11 @@ h1 {
         <span class="number">02</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://nitter.cf/kevinnbass/status/2099621874279817638" target="_blank" rel="noopener">Regulatory Capture by Anthropic Through METR</a></h2>
-      <p>An audit posted online accuses Anthropic of building a &quot;regulatory capture machine&quot; and calls for a Congressional investigation. The author argues that the AI safety group METR, which Anthropic&#x27;s Dario Amodei has proposed as a third-party evaluator of its models, is financially dependent on Anthropic&#x27;s success. The claim rests on an Anthropic stock stake donated by Dustin Moskovitz to the Good Ventures Foundation, which the author says grew from about $500 million to more than $7.7 billion in roughly 16 months and funds METR and other groups. The author also says the same funders back organizations that publish AI-doom warnings, so the evaluator is not independent and cannot be trusted to assess Anthropic&#x27;s models. The article cites IRS filings and Forbes reporting, though its own notes say the foundation&#x27;s filings do not name an Anthropic holding.</p>
+      <h2><a href="https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/" target="_blank" rel="noopener">Why is Gemini 4 Carbon taking so long?</a></h2>
+      <p>A team benchmarking Gemini 4 Carbon found that it took close to an hour on bug-fixing tasks that Opus and Astra finished in minutes, and users on Hacker News reported the same slowness. By tracing every step of the runs, the team found that slower inference explains only 16–30% of the gap against Astra and about half against Opus. The rest comes from Carbon doing more work: it took about seven times as many steps as Astra, and roughly half of its steps went to work the task never asked for, such as auditing unrelated code and guarding against cases already ruled out. Carbon was also less efficient per step, making about one tool call where Astra made more than two, and re-reading 39% of lines it had already seen versus 7% for Astra. When the team added a check-in asking whether Carbon already had enough to make the fix, it finished faster, suggesting the slowness comes from its behavior rather than what it knows.</p>
       <div class="meta">
-        <span>▲ 137 points</span><a href="https://news.ycombinator.com/item?id=50530450" target="_blank" rel="noopener">72 comments</a>
-        <a class="read" href="https://nitter.cf/kevinnbass/status/2099621874279817638" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 260 points</span><a href="https://news.ycombinator.com/item?id=50541790" target="_blank" rel="noopener">136 comments</a>
+        <a class="read" href="https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -185,11 +185,11 @@ h1 {
         <span class="number">03</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noopener">Claude Mythos slashed software work to onboard AMD GPUs to around three days</a></h2>
-      <p>Anthropic told investors in its IPO roadshow that its Claude Mythos Preview model did the software work needed to run one of its AI models on AMD MI355X GPUs in about three days, with basically no human intervention, a job it says used to take six to 12 months with dozens of engineers. The three days covered prompt processing for one model at a useful level of performance, and Mythos ported or wrote almost 100% of the kernels, the low-level code that ties a model to a chip. That kind of code has long been part of Nvidia&#x27;s CUDA moat, so an AI that can write it in days suggests the moat is eroding. Anthropic co-founder Tom Brown made the comparison, and the company&#x27;s prospectus says it can onboard new chip platforms in a fraction of the time it once took. Anthropic has not said how fast the model ran on AMD chips versus Nvidia&#x27;s, which is the comparison needed to show whether AMD hardware with AI-written code can match Nvidia.</p>
+      <h2><a href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/" target="_blank" rel="noopener">AI agents ask better questions than KPMG accountants in audit trial</a></h2>
+      <p>KPMG UK ran an experiment called Project Exponential in which more than 100 AI agents examined the financial statements of an unnamed FTSE 250 company alongside a regular audit team. According to the Financial Times, the agents sometimes went deeper into issues than the human auditors and asked questions the humans had not raised, said KPMG UK head of audit Cath Burnet. The agents collected and analysed data, drafted conclusions and suggested next steps, and could divide work among themselves. A human auditor still had to step in when one agent mismatched regulatory requirements with company documents, and the exercise was not a formal statutory audit. KPMG plans to expand the trial to as many as 20 larger audits, though it says the technology is not mature enough for thousands of engagements and that poor data quality remains an obstacle. The trial matters because auditing relies on large teams of junior accountants doing detailed, repetitive work, and AI agents could change that model and the economics of the Big Four firms.</p>
       <div class="meta">
-        <span>▲ 52 points</span><a href="https://news.ycombinator.com/item?id=50526264" target="_blank" rel="noopener">21 comments</a>
-        <a class="read" href="https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 243 points</span><a href="https://news.ycombinator.com/item?id=50547777" target="_blank" rel="noopener">118 comments</a>
+        <a class="read" href="https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -197,11 +197,11 @@ h1 {
         <span class="number">04</span>
         <span class="source">Hacker News</span>
       </div>
-      <h2><a href="https://newsletter.posthog.com/p/decision-models" target="_blank" rel="noopener">Not Everything Needs an LLM</a></h2>
-      <p>PostHog, a software company, has published what it learned from using decision models—smaller AI models that return typed answers with probability scores instead of free-form text—in production. The company uses these models to filter out most requests before they reach an expensive LLM: in its Replay Vision product, 98.7% of session summaries skip the LLM call entirely because a decision model checks them first. PostHog also uses decision models to route requests to the cheapest suitable model and to pick charts for SQL queries, and it found they are up to 444.6x cheaper and 193.6x faster than frontier models. The company warns that probability scores are not guarantees—a score of 0.85 still means about 150 wrong answers per 1,000 checks—so thresholds should be set based on which mistake costs more. It also found decision models fail at multi-step reasoning and open-ended ranking tasks, which should be left to LLMs. The takeaway matters for AI users: simple, checkable tasks can be handled by small models at a fraction of the cost, reserving LLMs for jobs that truly need them.</p>
+      <h2><a href="http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/" target="_blank" rel="noopener">Claude was trained on protein sequences at scale</a></h2>
+      <p>Researchers Xinming Tu and Leo Tianlai Chen tested whether large language models learned protein sequences by asking them to predict the next amino acid in 668 little-studied bacterial and archaeal proteins that have almost no scientific literature. The latest Claude models, Fable 5.2 and Opus 5.5, predicted correctly 54% of the time on real proteins versus 9% on shuffled versions, while GPT, Gemini and seven open-weight models stayed near zero. Fable 5.2 outperformed every open protein language model tested, and Opus 5.5 matched ProtGPT3-10B, the largest of them. Accuracy rose with the number of sequences in a protein family, which the authors say indicates the models learned from sequence data rather than from written descriptions. The authors conclude that protein sequences were a sizeable part of Claude&#x27;s training, and that GPT and Gemini show no sign of this.</p>
       <div class="meta">
-        <span>▲ 40 points</span><a href="https://news.ycombinator.com/item?id=50535740" target="_blank" rel="noopener">6 comments</a>
-        <a class="read" href="https://newsletter.posthog.com/p/decision-models" target="_blank" rel="noopener">Read the full article →</a>
+        <span>▲ 159 points</span><a href="https://news.ycombinator.com/item?id=50541619" target="_blank" rel="noopener">68 comments</a>
+        <a class="read" href="http://xinmingtu.cn/blog/2026/claude-opus-5-5-protein-sequences/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -209,11 +209,11 @@ h1 {
         <span class="number">05</span>
         <span class="source">TechCrunch</span>
       </div>
-      <h2><a href="https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/" target="_blank" rel="noopener">SEC reportedly investigating Nvidia amid Huang exit</a></h2>
-      <p>The SEC has opened a civil investigation into Nvidia over whether its disclosures misled investors, according to The Wall Street Journal. The probe follows the resignation of CEO Jensen Huang after news of his extramarital affairs, including one with Alice Huang, an executive at Singapore-based Megaspeed who is alleged to be a Chinese spy. The Commerce Department has been investigating Megaspeed since late 2024 over suspicions it diverted Nvidia chips to China, which would violate U.S. export laws. Congress has demanded Huang answer questions about how the affair may have affected his stance on loosening export restrictions, and Treasury Secretary Scott Bessent accused Nvidia of knowingly selling powerful chips to China to boost revenue. Nvidia&#x27;s stock has fallen more than 10% since Huang departed, even as the company reported revenue of $115.8 billion, up 103% from a year ago.</p>
+      <h2><a href="https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/" target="_blank" rel="noopener">Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’</a></h2>
+      <p>Palmer Luckey, the founder of Oculus and co-founder of Anduril Industries, warned at The New York Times DealBook Summit that AI-powered cyberattacks are moving faster than outdated systems can defend against them. He said advanced AI tools are helping create new exploits, and that U.S. adversaries are using the gap between fast new attack methods and slow-to-update defenses for both strategic and financial reasons, with North Korea particularly involved. Government officials largely blamed recent tech outages on companies rushing to patch systems against new AI-found vulnerabilities, but Luckey focused on the deeper problem of organizations relying on outdated technology. He argued that AI could eventually give defenders the upper hand, but only if they adopt it quickly. His message was that people need to pick up the pace: &quot;It’s time to start running.&quot;</p>
       <div class="meta">
         
-        <a class="read" href="https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -221,11 +221,11 @@ h1 {
         <span class="number">06</span>
         <span class="source">TechCrunch</span>
       </div>
-      <h2><a href="https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/" target="_blank" rel="noopener">Google joins the tech outage trend by announcing it’s not having one</a></h2>
-      <p>Google posted on X on Tuesday saying Gmail was running normally and that it saw no evidence of a broad Gmail disruption, pointing users to its real-time status dashboard. The statement came as reports of a Gmail outage spread on X around the same time Apple was having verified outages of its own; the concerns appeared to stem from a Downdetector post, and Downdetector is a crowdsourced site, not an official source for confirming outages. The fact that Google had to deny an outage shows growing anxiety about the reliability of major tech services, after a week in which Apple and Microsoft had outages, an FAA network failure caused a nationwide ground stop, and some banks and airlines reported disruptions. Director of National Intelligence Jay Clayton said on Fox Business that the U.S. is not facing coordinated or state-sponsored cyberattacks, and attributed the rise in problems to companies patching their systems, possibly because newer AI models are better at finding unknown vulnerabilities. He said patching is happening at a much larger scale than before, and some systems are &quot;not coming back as expected in all cases.&quot;</p>
+      <h2><a href="https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/" target="_blank" rel="noopener">Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated</a></h2>
+      <p>Nvidia co-founder and longtime CEO Jensen Huang stepped down last week after 33 years, following controversies including an extramarital affair with a woman investigated for possibly smuggling Nvidia chips into China. Anduril CEO Palmer Luckey said at the New York Times DealBook Summit that China is &quot;thrilled to have Jensen out&quot; and wants him reinstated, arguing the change weakens America and has knocked a trillion dollars off Nvidia&#x27;s market value. Luckey disagrees with Huang&#x27;s view that Nvidia should have more freedom to export chips to China, but says China benefits if its own chipmakers can challenge Nvidia. Nvidia has said China restricts imports of its chips, and interim CEO Colette Kress said the company will no longer sell H200 chips in China. More than 200,000 people, including Elon Musk and several tech CEOs, have signed a petition calling for Huang&#x27;s reinstatement, but Nvidia executives said they have no plans to reappoint him, even though Huang offered to return.</p>
       <div class="meta">
         
-        <a class="read" href="https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -233,11 +233,11 @@ h1 {
         <span class="number">07</span>
         <span class="source">The Verge</span>
       </div>
-      <h2><a href="https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang" target="_blank" rel="noopener">Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing</a></h2>
-      <p>Nvidia reported third-quarter revenue of $115.8 billion, up 103 percent from a year earlier and above its own forecast of $108 billion. Data center revenue rose 110 percent to $107.6 billion, and the company posted a record profit of $65.3 billion. Interim CEO Colette Kress announced the results, while board chair Harvey Jones said the board does not intend to reinstate former CEO Jensen Huang and would not take questions about his resignation or the ongoing investigation. Nvidia said it expects fourth-quarter revenue of $130 billion. The results matter because they show Nvidia&#x27;s data center business still growing fast even as the company faces questions about its leadership.</p>
+      <h2><a href="https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica" target="_blank" rel="noopener">Trump’s latest land grab is an AI hub in the Philippines</a></h2>
+      <p>President Trump visited the Philippines to promote a US-led plan called Pax Silica, which aims to build chip factories, mineral processing plants, and data centers in other countries to reduce reliance on China for AI hardware. The proposed site is a 1,620-hectare hub at the former Clark Air Base, and Philippine and US officials expect to sign a framework agreement by the end of the year. The Philippine government welcomed Trump, but hundreds of protesters demonstrated against the plan, and Indigenous Aeta residents say they are being told to relocate by December. Human rights advocates warn the project will displace Indigenous people and cut them off from water and farmland. The plan matters because the US is recruiting less affluent countries to host AI infrastructure that Americans increasingly oppose in their own communities.</p>
       <div class="meta">
         
-        <a class="read" href="https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -245,11 +245,11 @@ h1 {
         <span class="number">08</span>
         <span class="source">The Verge</span>
       </div>
-      <h2><a href="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake" target="_blank" rel="noopener">Not even Sam Altman is safe from AI deepfakes on Instagram</a></h2>
-      <p>Alexandr Wang, Meta&#x27;s chief AI officer, posted an AI-generated video on Instagram in November to promote Muse, Meta&#x27;s consumer AI agent. The clip shows a fake video call with Wang, Mark Zuckerberg, Sam Altman, and Muse&#x27;s mascot, with Altman dressed as the mascot. The post is labeled as AI content, which Meta&#x27;s policy requires for AI videos of real people, though static images have no such rule. The article notes this comes as Instagram faces criticism over AI-generated images of public figures, including actress Mia Goth. It matters because a top executive at a major tech company is posting deepfaked content of a competitor, and because Meta&#x27;s labeling rules cover videos but not images.</p>
+      <h2><a href="https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang" target="_blank" rel="noopener">What’s next for Nvidia? Whatever doesn’t rock the mind-bogglingly profitable boat</a></h2>
+      <p>Nvidia is making about $700 million in profit per day, or over $200 billion a year, after the AI boom drove its quarterly profits to $65.3 billion—far above earlier peaks of $1.24 billion during the crypto boom and $3 billion during the GPU shortage. The company recently lost its founder and CEO, Jensen Huang, to a series of scandals, and its market value fell from around $5 trillion in early November to about $3.6 trillion. Interim CEO Colette Kress said on the November 17 earnings call that it is &quot;business as usual&quot; and that Nvidia has the backing of customers and suppliers including chipmaker TSMC. She also promised to return all excess free cash flow to shareholders, more than the 50 percent baseline Huang had pledged. Nvidia projects $130 billion in revenue next quarter, though gross margins are expected to slip to 71–72 percent.</p>
       <div class="meta">
         
-        <a class="read" href="https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -257,11 +257,11 @@ h1 {
         <span class="number">09</span>
         <span class="source">Ars Technica</span>
       </div>
-      <h2><a href="https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/" target="_blank" rel="noopener">“Trump was in bed with Jensen”: Critics balk at Huang’s wish to return to Nvidia</a></h2>
-      <p>Trucks with billboards drove around Washington, DC, urging Congress to investigate the Trump administration&#x27;s ties to Nvidia CEO Jensen Huang, created by the nonprofit Tech Oversight Project. Trump supports bringing Huang back as CEO even though many Republicans call it a bad idea, and Huang said he would be &quot;honored&quot; to return, but Nvidia&#x27;s board said reinstatement is not under consideration while an internal investigation into US spying claims continues. Questions have been raised about what Trump knew and when regarding Huang&#x27;s potential exposure to a Chinese spy, and critics accuse the administration of corruption. Sen. Richard Blumenthal and other lawmakers plan to investigate, and the Tech Oversight Project also raised concerns about possible conflicts of interest for former White House AI Czar David Sacks and Commerce Secretary Howard Lutnick. The article reports that Trump has bought millions of dollars worth of Nvidia shares since returning to office, and critics say officials may have profited from policies allowing Nvidia to sell chips to China.</p>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/" target="_blank" rel="noopener">Muse privacy invasions are freaking out Meta staffers, internal chats show</a></h2>
+      <p>Meta’s Muse AI agent, launched in September and downloaded more than 10 million times, has raised privacy alarms from both early users and Meta’s own staff. Internal chats seen by Reuters show employees warning that Muse appeared to read encrypted private messages, mixed up conversations between users, and sent unrequested outputs, including one that shared bank account balances and another that signed a staffer up for a dog insurance plan charging $888 a month. Meta spokesperson Daniel Roberts called these “isolated incidents” and said the agent was hallucinating messages because of built-in prompts, and the company says it has fixed the bug and that employee testing is meant to catch such problems. Reuters also worked with Signal and the AI Now Institute and found that on Android devices Muse could read Signal messages by using permissions granted during setup, though requests were blocked on iPhone. The episode matters because it raises questions about whether AI agents can access private data without clear user consent, even as Meta markets Muse on user control.</p>
       <div class="meta">
         
-        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <article class="story">
@@ -269,15 +269,39 @@ h1 {
         <span class="number">10</span>
         <span class="source">Ars Technica</span>
       </div>
-      <h2><a href="https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/" target="_blank" rel="noopener">Google makes it easier to use Gemini without training AI on your data</a></h2>
-      <p>Google is rolling out new settings in the Gemini app that separate your chat history from AI training. Before this change, the only way to stop Google from training on your chats was to turn off your history, which meant you couldn&#x27;t return to past conversations. Now users get two separate toggles: one for chat history and one for model training. The training toggle is opt-out, so you have to find it under Activity in Gemini settings or through your Google account&#x27;s Data and Privacy menu to block Google from using your chats. The change only applies to future interactions, since data you&#x27;ve already given Google is already part of its training data, which the company may keep for up to three years. This matters because it gives users a way to keep using Gemini&#x27;s basic features without handing over as much data for training.</p>
+      <h2><a href="https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/" target="_blank" rel="noopener">Will Wright&#x27;s next simulation will use AI to mine content from your memories</a></h2>
+      <p>Will Wright, the designer behind SimCity and The Sims, is promoting a new simulation game called MyMems, planned for release next year. His studio Gallium Studios is working with partner Artificial Agency on the project. The game uses generative AI to take memories provided by the player and turn them into digital people who can form teams and solve puzzles in the game world. Wright says the goal is to capture personal details that earlier games like The Sims could not, such as a player&#x27;s fears or family relationships. MyMems will also sort memories into themed areas, such as sports, vacations, injuries, and deaths, and players can build worlds from memories shared with family, friends, or co-workers. It matters as Wright&#x27;s first major project in over 15 years and an early example of generative AI being used to build a personal game experience.</p>
       <div class="meta">
         
-        <a class="read" href="https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/" target="_blank" rel="noopener">Read the full article →</a>
+        <a class="read" href="https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/" target="_blank" rel="noopener">The AI Hype Index: AI is everywhere</a></h2>
+      <p>Google is putting AI Overviews into search results even though the feature costs the company billions in lost ad revenue, according to the article. The piece describes AI spreading &quot;like a nasty rash&quot; into everyday places, including AI-powered humanoid robots being carried up stairs to clean rooms. It also mentions encountering AI at the supermarket, though the article cuts off there. The article is framed as an &quot;AI Hype Index,&quot; suggesting it is tracking how aggressively AI is being pushed into products and daily life. The main point is that AI is appearing everywhere, and companies like Google are willing to absorb real financial costs to keep pushing it.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">12</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/" target="_blank" rel="noopener">This smell startup says its AI nose is as good as a human’s</a></h2>
+      <p>Osmo, an AI startup with a lab near Newark Airport in New Jersey, is using about 30 experienced human sniffers to build a training dataset of smells. The sniffers record descriptions like &quot;nutty,&quot; &quot;peachy,&quot; and &quot;marine,&quot; which are cross-referenced with chemical analysis. Osmo says this data is being used to create what it calls the world&#x27;s first foundation model for smell, and the company claims its AI nose is as good as a human&#x27;s. The work matters because smell has been a hard sense for AI to replicate, and a reliable digital nose could have uses in food, fragrance, and other industries.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/" target="_blank" rel="noopener">Read the full article →</a>
       </div>
     </article>
     <nav class="bottom"><a href="index.html">Latest</a></nav>
-    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
   </main>
 </body>
 </html>
