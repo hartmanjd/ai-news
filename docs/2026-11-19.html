@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Thursday, November 19, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Thursday, November 19, 2026</h1>
+      <p class="subtitle">10 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering" target="_blank" rel="noopener">Anthropic prices initial public offering</a></h2>
+      <p>Anthropic priced its initial public offering at $83.00 per share. The offering covers 980,000,000 shares of Class A common stock, with 956,351,354 sold by Anthropic and 23,648,646 sold by certain selling stockholders; Anthropic will not receive any proceeds from the selling stockholders&#x27; shares. The shares are expected to start trading on the Nasdaq Global Select Market on November 19, 2026 under the symbol &quot;ANT,&quot; and the offering is expected to close on November 20, 2026. Anthropic also granted the underwriters a 30-day option to buy up to 147,000,000 additional shares. The SEC declared the registration statement effective on November 18, 2026. This matters because it marks Anthropic&#x27;s move to become a publicly traded company.</p>
+      <div class="meta">
+        <span>▲ 410 points</span><a href="https://news.ycombinator.com/item?id=50553843" target="_blank" rel="noopener">764 comments</a>
+        <a class="read" href="https://www.anthropic.com/news/anthropic-prices-initial-public-offering" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://ounapuu.ee/posts/2026/11/19/unsafeguards/" target="_blank" rel="noopener">Fuck Your AI Safeguards</a></h2>
+      <p>A senior product engineer wrote that he asked Anthropic&#x27;s Claude Code tool to check his own product for easy security fixes, and it found a simple one-line issue. He says the tool then blocked him from applying the fix because of &quot;AI safeguards,&quot; and that getting an exemption would require waiting several business days, giving up data retention protections, and submitting a passport or ID, with no guarantee of approval. He says this has happened before when he tried to test whether public exploit code could be used against his services, and that Claude told him to use an older model instead. He argues criminals don&#x27;t need approval because they can use open-weight models without safeguards, so the restrictions mainly hurt people trying to defend their own systems. He ended up using an EU-hosted open-weight model, GLM 5.3, which confirmed the issue and helped fix and verify it.</p>
+      <div class="meta">
+        <span>▲ 400 points</span><a href="https://news.ycombinator.com/item?id=50562262" target="_blank" rel="noopener">157 comments</a>
+        <a class="read" href="https://ounapuu.ee/posts/2026/11/19/unsafeguards/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering" target="_blank" rel="noopener">LLM assisted reverse engineering</a></h2>
+      <p>A longtime hardware and software hacker describes how he now uses large language models to speed up reverse engineering. He uses DeepSeek v4.1 Flash as his main AI, along with the free Ghidra disassembler connected through an MCP bridge, and sometimes radare2 or kuna. His process is to point an AI agent at a binary, have it identify the file type and platform, document findings in markdown files, and map the basic structure before making changes. When the agent gets stuck, he has it debug the binary, add logging probes, or write down hypotheses in a table and design experiments to prove or disprove them. He says this approach let him reverse engineer devices like the Alphasmart NEO, map camera protocols for Sony mirrorless cameras, and build custom firmware for synthesizers and an ebook reader—work he says would have taken years by hand.</p>
+      <div class="meta">
+        <span>▲ 296 points</span><a href="https://news.ycombinator.com/item?id=50553225" target="_blank" rel="noopener">75 comments</a>
+        <a class="read" href="https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.anthropic.com/research/claude-black-hole-physics" target="_blank" rel="noopener">Claude solves two open problems in the physics of black holes</a></h2>
+      <p>Claude, an AI model made by Anthropic, solved two open problems in theoretical physics about black holes and quantum gravity. In the first, it completed a complex calculation that physicists first set up in 2003 but never finished, showing that the sudden transition where a hot gas turns into a black hole is abrupt even when spacetime becomes blurry at tiny scales. In the second, it found the exact upper limit for the simplest version of a method called bootstrapping, which physicists use to rule out wrong theories of quantum gravity. The work was done by agents running copies of Claude in the background for about six weeks, and the results were checked by a physicist and formally verified in a computerized proof checker. Neither result describes our own universe directly or has practical applications, but both add to the long effort to understand how quantum mechanics and general relativity fit together.</p>
+      <div class="meta">
+        <span>▲ 295 points</span><a href="https://news.ycombinator.com/item?id=50563148" target="_blank" rel="noopener">125 comments</a>
+        <a class="read" href="https://www.anthropic.com/research/claude-black-hole-physics" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/" target="_blank" rel="noopener">Gemini 4 Neon looks like an Opus 5.5 competitor</a></h2>
+      <p>Gemini 4 Neon was released today as a faster version of Gemini 4 Carbon, which is the top model on the Agent Duel leaderboard once early votes are excluded, but is very slow. Neon was served via OpenRouter at 127 tokens per second, compared with 46 tokens per second for Carbon, and it also shows slightly better benchmark scores. The author modeled leaderboard win rates and found that speed matters about as much as model identity. Assuming Neon matches Carbon&#x27;s performance at that higher speed, the projection puts Neon at an Elo of 1,066, just below Opus 5.5 at 1,078, with Neon projected to win 48.3% of head-to-head matches against Opus. This matters because it suggests a much faster model could compete closely with Opus 5.5, though the projection&#x27;s 90% interval of -94 to +68 means the result is not certain.</p>
+      <div class="meta">
+        <span>▲ 249 points</span><a href="https://news.ycombinator.com/item?id=50554374" target="_blank" rel="noopener">78 comments</a>
+        <a class="read" href="https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/" target="_blank" rel="noopener">Meta’s new Muse Charm device may cost $300</a></h2>
+      <p>Meta plans to charge $300 for Muse Charm, an upcoming Tamagotchi-like AI device that the company teased at its Connect event earlier this year, according to a report from The Information. When TechCrunch asked for comment, a Meta spokesperson did not deny the claims and said only that the company is &quot;charmed by the interest in our AI devices&quot; and will share more soon. The device is Meta&#x27;s push into AI hardware and would let users carry a physical version of its Muse AI software in their pocket or wear it around their neck, talking to it and giving it commands. It is unclear whether customers will buy it, since AI wearables have struggled so far, and $300 is a steep price for something the size of a keychain, though it is in line with similar products like Friend&#x27;s $250 wearable.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/" target="_blank" rel="noopener">These tech outages are giving Y2K, AI agent style</a></h2>
+      <p>In the past two weeks, several major U.S. companies and agencies faced technical outages that disrupted everyday systems. Apple Pay, NASA&#x27;s internal communications, Microsoft&#x27;s Outlook, Teams, and Copilot, and the FAA&#x27;s flight systems all went down, with the FAA grounding all flights for hours. Many companies said the outages were caused by tech issues, not cyberattacks or AI attacks, and the Director of National Intelligence said they don&#x27;t appear linked to state-sponsored terrorism. Cybersecurity investor Dave DeWalt told TechCrunch the outages are likely &quot;growing pains&quot; as AI tools surface old vulnerabilities faster than companies can fix them, and the rush to patch is disrupting systems. Virginia Senator Mark Warner called the disruptions a &quot;wake-up call&quot; that AI is moving faster than our ability to manage its consequences. The article matters because it shows how the push to modernize aging systems with AI is straining infrastructure, and experts say companies need more testing and tighter controls as they adopt AI.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings" target="_blank" rel="noopener">A brief history of Nvidia’s recent stock fluctuations</a></h2>
+      <p>Nvidia reported a strong third quarter, with revenue more than doubling from a year earlier to $115.8 billion, helped by data center revenue that rose 110 percent and nearly $20 billion from its new Vera Rubin platform. But the stock has fallen sharply, closing at $145.98 on Thursday, a 52-week low and about 40 percent below its October 6 high. The drop followed the resignation of former CEO Jensen Huang amid reports of extramarital affairs, including one with a Chinese national alleged by US intelligence sources to be a spy. The board, which says it will not reinstate Huang, has begun searching for a replacement, and Huang is set to testify before House committees in December. Investors are weighing Nvidia&#x27;s strong financial results against concerns about its leadership vacuum, congressional testimony, and regulatory uncertainty.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price" target="_blank" rel="noopener">Meta’s Muse Charm might cost $300</a></h2>
+      <p>Meta plans to price its Muse Charm gadget at $300, according to The Information. The small device has a screen and lets people talk to Meta&#x27;s Muse AI agent without unlocking a phone or opening an app. CEO Mark Zuckerberg announced it earlier this year and said it should ship in time for the December holidays, but he did not give a price then. The Information also reports the Charm will come with a free 12-month 5G data plan from Verizon. Meta spokesperson Tyler Yee said the company is &quot;charmed by the interest&quot; in its AI devices and will share more soon. The price matters because it shows what Meta thinks people will pay for a dedicated AI device.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/" target="_blank" rel="noopener">Traumatized teens sue school, cops after Doritos bag triggers AI gun alert</a></h2>
+      <p>Four Black high school students in Baltimore County, Maryland, are suing their school district, police officers, and the AI gun detection company Omnilert after a false alert led to an armed police response. In October 2025, the school&#x27;s Omnilert system flagged one student holding a bag of Doritos as a possible gunman; officials canceled the alert within two minutes, but the school principal still texted a school resource officer to send police, who arrived with guns drawn, handcuffed the teens, and searched them. The lawsuit says the students&#x27; constitutional rights were violated and seeks to bar the district from using Omnilert until proper protocols are in place. A state inspector general&#x27;s report found the principal had not been trained on the system and that the district&#x27;s alert process was flawed. The case matters because it shows how a false AI alert, combined with human error, can put students in real danger, and it raises broader questions about how schools use AI for safety.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/traumatized-teens-sue-school-cops-after-doritos-bag-triggers-ai-gun-alert/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-18.html">2026-11-18</a></li><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
