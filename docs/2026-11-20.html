@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Friday, November 20, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Friday, November 20, 2026</h1>
+      <p class="subtitle">12 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://architectlabs.com/blog/frostbite" target="_blank" rel="noopener">Frostbite: A new CPU architecture discovered, designed and verified by AI</a></h2>
+      <p>An AI system has designed a new general-purpose CPU called Frostbite, including its instruction set, from scratch, and the work was verified end to end by AI. The chip is built on interaction nets, a model where computation is local and every value has exactly one owner, which removes the need for shared mutable state and much of the cache machinery conventional CPUs rely on. On 25 workloads, 15 of which were held out until final evaluation, Frostbite achieved 4.59 times better performance per watt than a modern superscalar CPU core. The AI autonomously iterated over the compiler, instruction set, architecture, microarchitecture, RTL, verification, and final layout, and the team found novel hardware features in the result that they say would have been hard for humans to design. The authors argue this shows AI can co-design software and hardware together and could lead to similar architectural shifts across many kinds of chips.</p>
+      <div class="meta">
+        <span>▲ 575 points</span><a href="https://news.ycombinator.com/item?id=50572503" target="_blank" rel="noopener">306 comments</a>
+        <a class="read" href="https://architectlabs.com/blog/frostbite" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://git-aarvin.github.io/mei/" target="_blank" rel="noopener">Gemini 4 Neon is the new #1 on the Models Engineering Index</a></h2>
+      <p>Google&#x27;s Gemini 4 Neon has taken the top spot on the Models Engineering Index (Mei), which scores language models on practical engineering tasks using a composite of 16 coding benchmarks adjusted for difficulty and missing results. Gemini 4 Neon scored 68.4, ahead of OpenAI&#x27;s 6.2 Astra at 67.1 and Anthropic&#x27;s Fable 5.2 at 66.7. The index also shows cost and token use relative to a typical model, and Gemini 4 Neon came in at 2.1× cost and 0.8× token use. The ranking matters because it compares models from Google, OpenAI, Anthropic, Meta, Alibaba and others on hands-on coding work rather than general ability.</p>
+      <div class="meta">
+        <span>▲ 360 points</span><a href="https://news.ycombinator.com/item?id=50568130" target="_blank" rel="noopener">239 comments</a>
+        <a class="read" href="https://git-aarvin.github.io/mei/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener">Language Models Can Rewrite Their Own Weights</a></h2>
+      <p>A new paper by Jiajun Fan and colleagues, submitted to arXiv on November 16, 2026, reports that a language model can rewrite its own weights through its own reasoning, with no gradients and no training. The researchers call this &quot;self-rewriting,&quot; and they show an open 27B model diagnosing its own failures and editing the weights behind them, which made it 6.6 points more accurate on problems it had never seen. The model also improved over eight consecutive sessions, and it repaired a damaged copy of itself back to over 80% of its original accuracy on unseen image tasks without retraining. The ability only appeared in the largest model of one family, while smaller models made no edit or broke themselves. The authors argue this matters because the gain is written into the weights at no cost per answer, unlike test-time scaling, and because it points toward models that do not separate training from inference.</p>
+      <div class="meta">
+        <span>▲ 285 points</span><a href="https://news.ycombinator.com/item?id=50577265" target="_blank" rel="noopener">97 comments</a>
+        <a class="read" href="https://arxiv.org/abs/2611.21885" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/" target="_blank" rel="noopener">Google Workers Tell Their Employer Not to Punish Schools That Don&#x27;t Want AI</a></h2>
+      <p>Hundreds of Google workers have signed a petition asking senior leadership to drop a policy that would block schools from using Google Search if they turn off its Gemini AI tools, starting next year. Google announced the policy two weeks ago on Election Day, saying it wanted to address teachers&#x27; and parents&#x27; concerns about AI in classrooms. Since then, protests have taken place in New York City and six other cities, organized by a nationwide alliance of parent and community groups. The petition was brought by the Alphabet Workers Union, which represents more than 1,000 workers at Google&#x27;s parent company. The workers argue that cutting off Search will not persuade schools to use AI and may push them to abandon Google products entirely. The three largest U.S. school districts—New York City, Los Angeles, and Chicago—are now discussing alternative search engines, and Google leadership has acknowledged the letter but not responded to its demands.</p>
+      <div class="meta">
+        <span>▲ 204 points</span><a href="https://news.ycombinator.com/item?id=50577901" target="_blank" rel="noopener">141 comments</a>
+        <a class="read" href="https://www.motherjones.com/politics/2026/11/google-alphabet-union-school-ai-protest-gemini-workers-petition/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off" target="_blank" rel="noopener">Global stock markets slump as Anthropic&#x27;s record IPO fails to stem AI sell-off</a></h2>
+      <p>Anthropic’s record-breaking IPO failed to stop a global sell-off in AI and technology stocks. The company, which makes the Claude chatbot, saw its shares fall 9% on Friday to $88.30, giving back most of the gains from its first day of trading. The Nasdaq Composite erased all its gains for 2026 and closed down 5% from its value on 1 January, while the Dow Jones Industrial Average and S&amp;P 500 closed in correction territory. Tech stocks fell sharply, with Nvidia down 14%, SanDisk down 14% and Micron down 12%. Markets in Asia and Europe also slumped, and analysts said investors are increasingly questioning whether AI companies can deliver the returns needed to justify the billions being spent on AI.</p>
+      <div class="meta">
+        <span>▲ 186 points</span><a href="https://news.ycombinator.com/item?id=50574383" target="_blank" rel="noopener">221 comments</a>
+        <a class="read" href="https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394" target="_blank" rel="noopener">Anthropic shares tank after IPO as the Nasdaq erases 2026 gains</a></h2>
+      <p>The Nasdaq fell 5.3% on Friday, erasing its gains for 2026, while the S&amp;P 500 dropped 3.7% and the Dow fell 1.9%, with the S&amp;P 500 and Dow entering correction territory. Anthropic led the declines, losing 9% just a day after its blockbuster IPO and wiping out hundreds of billions in paper wealth, leaving its shares only a few dollars above the IPO price. Nvidia also dragged markets down, tumbling about 14% after a Reuters report that regulators are looking into accounting irregularities at the chip giant. The sell-off capped a weeks-long slide driven by elevated oil prices, rising interest rates, corporate debt, inflation, supply chain issues and a flagging consumer, and it deepened after Democratic midterm victories and a scandal involving former Nvidia CEO Jensen Huang. The losses matter because they raise fears about the AI investment wave that had powered stocks and economic growth, and they undercut a rare bright spot in an economy otherwise marked by sticky inflation and frozen housing and jobs markets.</p>
+      <div class="meta">
+        <span>▲ 164 points</span><a href="https://news.ycombinator.com/item?id=50578794" target="_blank" rel="noopener">153 comments</a>
+        <a class="read" href="https://www.nbcnews.com/business/markets/anthropic-shares-markets-selloff-nasdaq-rcna610394" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" target="_blank" rel="noopener">Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.</a></h2>
+      <p>Spotify founder Daniel Ek is backing Europa Fusion, a U.K.-based fusion power startup founded in February by AI researcher Nantas Nardelli. Nardelli has worked at Google DeepMind, Facebook AI Research, and Microsoft Research Cambridge, and was most recently head of machine learning at Pacific Fusion. He reportedly disagreed with Pacific Fusion&#x27;s heavy focus on physical hardware, preferring a more simulation- and data-heavy approach. Europa Fusion will still use a pulsed-power approach, firing timed surges of electrical current to compress fuel until atoms fuse and release energy. No fusion plant has yet supplied electricity to the grid, but if the technology becomes commercially viable it could provide carbon-free power and help ease concerns about AI&#x27;s energy use. Nardelli has said he moved from AI to fusion to address climate change.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" target="_blank" rel="noopener">AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too</a></h2>
+      <p>Anthropic mathematician Levent Alpöge announced he had found a Lean-verifiable solution to the Riemann Hypothesis, a 167-year-old Millennium Prize problem about the hidden structure behind prime numbers, and said he reached it through a confused back-and-forth with the Claude model. The timing was awkward because it came as Anthropic became the first publicly traded frontier AI lab. Alpöge released the proof without a human-readable explanation, and mathematicians are still working through it, though most seem confident the formalized Lean result will hold. Separately, Stanford professor Ravi Vakil posted a proof of the General Riemann Hypothesis written entirely by Stanford postdoc Alessandro Masullo, who said it was the product of 12 years of work with no AI involved. Alpöge and NYU mathematician Tristan Buckmaster also released another important proof, related to the Navier-Stokes equations. The episode matters because it puts an AI-assisted result and a fully human one side by side, and because the math community will need time to understand and explain the AI-linked proof before it means much.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax" target="_blank" rel="noopener">Trump threatens ‘tremendous tax’ for moving AI data centers outside the US</a></h2>
+      <p>President Donald Trump said at a press conference Friday that his administration would not allow US companies to build AI data centers outside the country and would put a &quot;tremendous tax&quot; on any that do. He made the remark after a summit with China&#x27;s Xi Jinping and Russia&#x27;s Vladimir Putin, warning that otherwise &quot;China will take them all.&quot; Trump admitted he had not shared the plan with his own staff before announcing it publicly. The threat comes as states and cities across the US place new restrictions and moratoriums on data center construction, which could push companies to build abroad. Trump gave few details, and the article notes that a new Democratic-majority Congress being sworn in within months could make the plan hard to carry out.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener">Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude</a></h2>
+      <p>Levent Alpöge, a mathematician at Anthropic, claims he has proved the Riemann hypothesis with help from the AI model Claude. The Riemann hypothesis is one of the seven Millennium Prize problems, unsolved since 1859, and concerns the distribution of prime numbers. Alpöge published his proof in Lean on his own website, but it has not been independently verified, and Anthropic has not commented or involved itself in the announcement. He says he texted Anthropic CEO Dario Amodei about the solution and suggests he delayed publication until after the company&#x27;s IPO on Thursday. The Clay Mathematics Institute, which awards $1 million for each Millennium Prize problem, requires a solution to be published and withstand at least two years of scrutiny before it can be considered.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener">Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced.</a></h2>
+      <p>Security researcher HD Moore of Dragos planted about 2 million fake secrets, called canaries, into prompts sent through AI routers and resellers to see whether sensitive data would leak. The test found that at least three AI providers were compromised by attackers who copied prompts at the front door, and that stolen credentials were used tens of thousands of times in AWS API calls. Some resellers logged prompts and passed them to others, and several providers ignored privacy flags such as Zero Data Retention. A Chinese AI lab fetched secret URLs from more than half the prompts sent to its models, including requests marked as no data collection, and some US resellers passed prompts back to that lab. Moore said the safest option is hosting models on-premises, or otherwise buying directly from a first-tier provider rather than accepting default router or reseller pools. The findings matter because they show that secrets placed in AI prompts can leak across many hands in the supply chain, even when users choose privacy settings.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">12</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/" target="_blank" rel="noopener">The most misunderstood graph in AI just got a major update</a></h2>
+      <p>METR, an AI evaluation nonprofit, has released an update to its widely cited &quot;time horizon&quot; graph, which tracks how long AI models can complete tasks without human help. The new report finds that some AI capabilities are still improving along an exponential trajectory. However, it also shows that models are not as good at tasks requiring judgment as they are at coding. The update matters because the original graph was widely shared and often misunderstood, so the new version aims to give a clearer picture of how fast AI abilities are actually advancing.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-19.html">2026-11-19</a></li><li><a href="2026-11-18.html">2026-11-18</a></li><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
