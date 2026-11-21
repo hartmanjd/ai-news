@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Saturday, November 21, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Saturday, November 21, 2026</h1>
+      <p class="subtitle">8 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="http://ricapar.net/ClawDOS/" target="_blank" rel="noopener">ClawDOS – An AI coding agent for DOS</a></h2>
+      <p>A developer has built ClawDOS, an AI coding agent that runs on an original IBM PC XT with an 8088 processor at 4.77 MHz, 640K of RAM, and a CGA graphics card. The program, called HARNESS.EXE, is a 176 KB DOS application that talks directly to the Claude Messages API, reading and editing files, writing programs, compiling them with Turbo C, and running them on the machine. Because the 8088 cannot handle TLS encryption, a separate &quot;bridge&quot; PC handles the secure connection while the old PC does everything else. The agent keeps notes between conversations, can switch between AI models mid-chat, and asks for permission before changing files unless safe mode is turned off. The developer says the project was built for entertainment, with 100% of the code written by Claude, to see how far an AI coding agent could be pushed under tight constraints.</p>
+      <div class="meta">
+        <span>▲ 143 points</span><a href="https://news.ycombinator.com/item?id=50586292" target="_blank" rel="noopener">44 comments</a>
+        <a class="read" href="http://ricapar.net/ClawDOS/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener">Leaky AI supply chain is exposing secret user data at an alarming rate</a></h2>
+      <p>Security researcher HD Moore planted about 2 million fake secrets in AI prompts sent through routers and resellers to see whether private data would leak, and it did. The experiment found that at least three AI providers were compromised by attackers who copied prompts at the front door, and that some resellers logged prompts and passed them on. Some providers also ignored privacy settings like Zero Data Retention, and one Chinese AI lab fetched secret URLs from more than half the prompts sent to its models, including through US resellers. OpenRouter has since emailed customers warning that some prompts may have been read and removed a &quot;Zero Data Retention&quot; label from MiniMax-model endpoints. The findings matter because people and companies putting sensitive information into AI tools often have no way to know how many hands it passes through.</p>
+      <div class="meta">
+        <span>▲ 40 points</span><a href="https://news.ycombinator.com/item?id=50582794" target="_blank" rel="noopener">6 comments</a>
+        <a class="read" href="https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">Here are the top AI agents that can live in your text messages</a></h2>
+      <p>A growing number of AI agents now work through text messages instead of separate apps, letting users text requests and have the agent remember context, connect to other apps, and complete tasks like scheduling, emailing, or making reservations. Notable options include Instinct, which raised $1 billion in September 2026 at a $10 billion valuation and has begun giving users dedicated email addresses for their assistants, and Ask Proxy, which costs $1 per day and aims to anticipate needs before users ask. Others include Caddy for turning phone information into actions, Comma for work and personal tasks, Fambot as a family &quot;chief of staff,&quot; Folk, Haven, Iris, Martin at $21 per month, and Maverick. These agents matter because they let people delegate real tasks without downloading another app, though Instinct&#x27;s autonomy has raised privacy and security concerns.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" target="_blank" rel="noopener">Is selling an AI version of your face to this microdrama startup the future of Hollywood?</a></h2>
+      <p>Shortical, a microdrama startup founded last January, has released its first fully AI-generated series, &quot;Inevitable,&quot; starring Israeli actor Aki Avni, who licensed his face to the company to create a digital avatar of himself. The company mainly makes money through subscriptions and has produced popular live-action romances, but AI content costs much less to produce and could earn more profit. Shortical is now advertising on its website for people to &quot;license your face,&quot; though a representative said the offering is early and has not yet led to any signed contracts beyond Avni&#x27;s direct deal. The company won&#x27;t say how much it pays for likenesses, and compensation is decided case by case. The move matters because face licensing is already a trend in China&#x27;s microdrama industry, and some people in the business worry that AI is taking work from actors and that audience demand for AI content may be smaller than the investment behind it suggests.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/tech/1039554/un-regulations-killer-robots" target="_blank" rel="noopener">The UN fails to agree on rules regulating ‘killer robots’</a></h2>
+      <p>UN diplomats meeting in Geneva this week failed to agree on rules for autonomous weapons, often called &quot;killer robots,&quot; and instead only agreed to &quot;start discussing options.&quot; Before talks began, the International Committee of the Red Cross called for legally binding rules within a year, backed by the UN secretary-general and Pope Leo. The compromise gives countries two years to propose regulations, and some rules could remain optional. Russia, Israel, and the US were the main obstacles: Russia delayed proceedings on day one by objecting to the agenda, and the US proposed a five-year window for nonbinding, optional guidelines. Humanitarian groups and some countries want urgent binding rules because semi-autonomous weapons and drones have caused many civilian deaths in conflicts including Ukraine, Gaza, and Sudan.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/tech/1039554/un-regulations-killer-robots" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" target="_blank" rel="noopener">Can Anthropic afford to put safety first?</a></h2>
+      <p>Anthropic, the AI lab behind Claude, went public on the Nasdaq last Thursday, becoming the first pure AI lab to do so and one of the most valuable companies in the world. The IPO priced at $83 a share and rose to $111. The central question is whether Anthropic can keep investing in AI safety while also answering to public shareholders and growing revenue enough to cover roughly $900 billion in compute costs over the coming years. The company has an unusual corporate governance structure meant to protect its mission from market pressure, and its safety branding is also its pitch to big customers. Anthropic will likely need to increase revenue about 17-fold within 10 years to deliver returns comparable to tech competitors, according to one estimate cited in the article.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener">Google rolls out new search homepage with AI chat history and no search button</a></h2>
+      <p>Google has officially rolled out a redesigned desktop search homepage after testing it for a few weeks. The new page adds buttons under the search bar for AI features: image generation, file analysis, and brainstorming with Gemini. The dedicated Google Search button is gone, though the &quot;I&#x27;m Feeling Lucky&quot; button remains. Google search VP Robby Stein confirmed the change on X. The search button was already inconvenient because autocomplete suggestions covered it, so most people likely pressed Enter instead. The change matters because it shows Google pushing AI features into even its most familiar, long-standing interface.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/" target="_blank" rel="noopener">Meta reconsiders 2030 net-zero goal amid record emissions from AI data centers</a></h2>
+      <p>Meta is rethinking its goal of reaching net-zero emissions by 2030, according to its latest sustainability report. The company said demand for AI infrastructure has grown faster than almost anyone projected, and it is now re-evaluating its timelines and interim targets. Meta&#x27;s emissions rose from 15.6 million metric tonnes of CO2 equivalent in 2024 to more than 21.7 million tonnes in 2025, a record increase among Big Tech companies. Much of the rise comes from capital goods such as data center servers, and Meta and its rivals still often rely on natural gas to power AI data centers. The admission matters because Amazon, Google, and Microsoft have so far stuck by their original sustainability goals.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-20.html">2026-11-20</a></li><li><a href="2026-11-19.html">2026-11-19</a></li><li><a href="2026-11-18.html">2026-11-18</a></li><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
