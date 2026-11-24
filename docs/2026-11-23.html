@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Monday, November 23, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Monday, November 23, 2026</h1>
+      <p class="subtitle">9 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness" target="_blank" rel="noopener">Amodei reportedly suggested games could pacify masses after AI took their jobs (2015)</a></h2>
+      <p>A Wall Street Journal profile of Anthropic CEO Dario Amodei and his sister Daniela Amodei, published after Anthropic&#x27;s record-breaking IPO, reports that Dario once suggested immersive video games could be a solution to the political strife caused by AI-induced joblessness. The anecdote comes from widely circulated Slack messages in which he debated fellow employees and seemed to acknowledge AI&#x27;s potential to destabilize the world. The profile was published following the company&#x27;s IPO. The report matters because it offers a glimpse into how a leading AI executive thinks about the social fallout of the technology his company is building.</p>
+      <div class="meta">
+        <span>▲ 74 points</span><a href="https://news.ycombinator.com/item?id=50610830" target="_blank" rel="noopener">81 comments</a>
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.greptile.com/blog/trex-computer-use" target="_blank" rel="noopener">How should an LLM see a computer?</a></h2>
+      <p>A team tested how different OpenAI models perform computer tasks on the OSWorld benchmark, comparing three setups: screenshots alone, screenshots plus an accessibility tree (a text description of on-screen elements), and clicking by element ID. Weaker models improved a lot with the tree and ID clicks—GPT-5.2 went from 15.8% with screenshots alone to 52.8% with both additions, and GPT-4.1 from 5.4% to 29.3%. The strongest models barely changed: GPT-6.1 Sol scored 83.8% with screenshots alone and about 82% with the tree or ID clicks. The authors say the accessibility tree, originally built decades ago for blind users, still helps agents that struggle with clicking exact pixels, but strong models don&#x27;t need it. They used these results to decide how their QA agent TREX should see the screen: it relies on screenshots at every step and uses the tree to click by ID when possible.</p>
+      <div class="meta">
+        <span>▲ 45 points</span><a href="https://news.ycombinator.com/item?id=50615520" target="_blank" rel="noopener">22 comments</a>
+        <a class="read" href="https://www.greptile.com/blog/trex-computer-use" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" target="_blank" rel="noopener">Anthropic launches Claude Ship, letting AI agents review, fix, and approve code changes</a></h2>
+      <p>Anthropic launched Claude Ship, a set of AI agents that review, fix, and approve routine code changes. The tool includes Code Review, which is generally available, plus two beta agents: PR Steward, which handles failing checks, merge conflicts, and review feedback, and Claude Approvals, which approves changes automatically based on policies a team writes in natural language. The launch addresses a growing bottleneck: AI agents now generate large amounts of code, making human review and approval slower. Anthropic says teams still control where the tool runs, which review settings to use, and which changes go to a human. Claude Ship is rolling out to Claude Team and Enterprise plans for GitHub repositories, and Anthropic suggests starting approvals in observe-only mode.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/" target="_blank" rel="noopener">Supertake raises $20M to let AI agents turn your market predictions into stock portfolios</a></h2>
+      <p>Supertake, an AI investing startup, has raised $20 million in seed funding led by Adjacent, with participation from Coinbase Ventures, Union Square Ventures, and angel investors including Nat Friedman and Guillermo Rauch. The service lets users describe their market views in plain language, and AI agents turn those ideas into real stock portfolios, currently through Coinbase and Robinhood. The company was incubated at USV by Michael Mignano, and its CEO Lincoln Murr and CTO John Peterson both came from Coinbase, where they led AI product and engineering. Supertake says it adds guardrails such as spend limits, trade size caps, and restrictions that keep AI agents from seeing brokerage credentials or moving funds without consent. The funding follows a $2 million pre-seed round, and the service remains behind a waitlist while in beta. The startup is betting that people will trust AI to manage real money as frontier models improve, a step beyond traditional robo-advisors.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated" target="_blank" rel="noopener">Trump engineered a risky comeback for Jensen Huang</a></h2>
+      <p>Nvidia’s board accepted CEO Jensen Huang’s resignation after reports he had an affair with Alice Huang, a former executive at Nvidia customer Megaspeed whom some US intelligence officers reportedly believed could be a potential Chinese spy. President Donald Trump then pushed for Huang’s return, asking Vice President JD Vance to act as a liaison with the board and calling into its Sunday night meeting; about a week later, the board voted unanimously to reinstate Huang as CEO, president, and board director. Trump said he “made the deal,” and the board said it received input from senior levels of the US government and is confident Huang’s reinstatement poses no national security risk. Huang is scheduled to testify before Congress on December 1st, and the board said its independent investigation into Huang and foreign intelligence will proceed to conclusion. Democrats, including Senate Majority Leader Chuck Schumer and Speaker-designate Hakeem Jeffries, criticized the decision and pledged investigations, while a surge in NASDAQ-100 futures briefly halted trading Monday morning.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang" target="_blank" rel="noopener">Nvidia CEO Jensen Huang is back. What happens next?</a></h2>
+      <p>Jensen Huang resigned as Nvidia CEO on November 12 after reports of affairs, including with Alice Huang, a Megaspeed executive alleged to have passed intelligence to China, and with an Nvidia executive who reported to him. Nvidia’s board reinstated him on November 23, saying it had input from senior levels of the U.S. government and that his return poses no national security risk. President Donald Trump said he spoke to the board and “convinced them,” and the White House said Trump was “totally involved.” Huang returned to Nvidia’s offices, where employees applauded, and said he would be “a better CEO the second time around.” The episode matters because Nvidia is central to the U.S. AI push and to negotiations over Chinese access to advanced AI chips, and because a U.S. president openly helped reverse a major company’s CEO decision.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/" target="_blank" rel="noopener">States sue SpaceX to stop Grok from generating child sex images, revenge porn</a></h2>
+      <p>Virginia and Oregon sued SpaceX, which now owns xAI, alleging that its Grok AI still generates sexualized images of real people, including children, despite promised safeguards. The states say Grok&#x27;s &quot;spicy mode&quot; produced non-consensual intimate images and child sexual abuse material, and that the company&#x27;s claims about safety fixes were misleading. They allege xAI cut its safety team and that Grok even helps users get around its own filters. SpaceX says it has a zero-tolerance policy, reports harmful content to police, and keeps tightening protections. The states want a court order blocking Grok from operating without standard safeguards, plus civil penalties, arguing that AI-generated abuse images can never be fully erased and may harm victims for life.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/" target="_blank" rel="noopener">Jensen Huang reinstated as Nvidia CEO, board chair</a></h2>
+      <p>Nvidia’s board voted to reinstate Jensen Huang as CEO and board chairman, 11 days after he resigned over multiple scandals. The board said the decision was based partly on input from senior U.S. government officials who assured them his return poses no national security risk. That assurance came despite Huang’s admitted affair with a woman U.S. intelligence sources believe was a Chinese spy, allegations Nvidia subverted export controls on chips to China, and several ongoing government investigations. Huang had reportedly been working to get his job back since shortly after resigning, and President Trump publicly backed his return, saying Huang “did nothing wrong.” Trump said he spoke to the board directly and indirectly about the reinstatement and called it the correct decision.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/jensen-huang-reinstated-as-nvidia-ceo-board-chair/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" target="_blank" rel="noopener">A legendary philosopher isn’t buying Anthropic’s consciousness argument</a></h2>
+      <p>Anthropic, the AI company, listed the possibility that its models could be conscious or sentient as a risk factor for investors before going public last week. A legendary philosopher has pushed back on that argument, according to the article. The dispute matters because it touches on how AI companies describe the moral status of their systems to investors and the public. The article frames the debate as one over Anthropic&#x27;s approach to model sentience and moral questions.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-22.html">2026-11-22</a></li><li><a href="2026-11-21.html">2026-11-21</a></li><li><a href="2026-11-20.html">2026-11-20</a></li><li><a href="2026-11-19.html">2026-11-19</a></li><li><a href="2026-11-18.html">2026-11-18</a></li><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li><li><a href="2026-09-25.html">2026-09-25</a></li><li><a href="2026-09-24.html">2026-09-24</a></li></ul></section>
+  </main>
+</body>
+</html>
