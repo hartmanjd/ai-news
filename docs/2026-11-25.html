@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Daily — Wednesday, November 25, 2026</title>
+  <style>/* page_style.css - the look of the news page. news.py pastes this into every page. */
+
+:root {
+  --bg: #f7f6f3;
+  --card: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e4e2dd;
+  --accent: #3b5bdb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --card: #1d1d20;
+    --text: #ececef;
+    --muted: #9a9aa2;
+    --line: #2c2c31;
+    --accent: #8ea2ff;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header { margin-bottom: 28px; }
+
+.kicker {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 6vw, 38px);
+  line-height: 1.15;
+  font-weight: 600;
+}
+
+.subtitle { margin: 0; color: var(--muted); }
+
+.story {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 22px;
+  margin-bottom: 14px;
+}
+
+.story-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.number { font-variant-numeric: tabular-nums; font-weight: 700; }
+
+.source {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.story h2 {
+  margin: 8px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.story h2 a { color: var(--text); text-decoration: none; }
+.story h2 a:hover { color: var(--accent); }
+
+.story p { margin: 0 0 14px; font-size: 16px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.meta a { color: var(--muted); }
+.meta a.read {
+  margin-left: auto;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.empty { color: var(--muted); }
+
+.bottom { margin: 28px 0 8px; }
+.bottom a { color: var(--accent); font-weight: 600; text-decoration: none; }
+
+.past h3 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.past ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.past a {
+  display: inline-block;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">AI Daily</p>
+      <h1>Wednesday, November 25, 2026</h1>
+      <p class="subtitle">13 stories, summarized. Tap a headline for the full article.</p>
+    </header>
+    
+    <article class="story">
+      <div class="story-top">
+        <span class="number">01</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://greydanus.github.io/2026/11/12/pengpt/" target="_blank" rel="noopener">PenGPT: A Generative Transformer for Handwriting and Sketches</a></h2>
+      <p>A researcher built PenGPT, a small transformer that generates handwriting and sketches from text prompts. There are two versions: a 6M-parameter model that writes print and cursive and can copy a new person&#x27;s handwriting from a few sample words, and a 54M-parameter model that draws from a text prompt. The handwriting data came from about 495,000 words by 1,255 writers, traced from scanned pages, and the drawing data from about 477,000 public sketches. Testing showed that data and data augmentation mattered most: cutting the data hurt results, and removing augmentation made the drawing model stop following prompts entirely, while architecture changes like doubling the model size made little difference. The author says this was his first project following the &quot;Bitter Lesson,&quot; with about 80% of the effort going into building clean datasets rather than clever design. The models still have limits: the drawing model blends ideas but can&#x27;t bind them (it can&#x27;t control who wears a hat or which way something faces), and sampled handwriting is less legible than real writing.</p>
+      <div class="meta">
+        <span>▲ 386 points</span><a href="https://news.ycombinator.com/item?id=50637056" target="_blank" rel="noopener">76 comments</a>
+        <a class="read" href="https://greydanus.github.io/2026/11/12/pengpt/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">02</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.marginalia.nu/log/a_141_marginalia_update/" target="_blank" rel="noopener">Marginalia Search, Money, C++, Rust, AI, Stuff</a></h2>
+      <p>Marginalia Search&#x27;s developer says the project has had a good few months, with SerpApi contributing $10k and donations and API-key sales rising month over month since the summer, though the operation is not yet self-sustaining. Most major parts of the search engine are now in place, so recent work has focused on bug fixes and technical debt rather than big new features. The developer is also experimenting with moving the index code from Java to C++, because the project is CPU-bound and Java&#x27;s handling of off-heap memory is awkward, but no decision has been made and the work is slow and may be abandoned. The developer says they chose C++ over Rust or other languages because they are experienced with it, and that having an AI write the code would leave them unable to maintain it. They also note they have no analytics, so they don&#x27;t know where users come from, and that free API keys are being mailed out slowly due to a backlog of requests.</p>
+      <div class="meta">
+        <span>▲ 215 points</span><a href="https://news.ycombinator.com/item?id=50638220" target="_blank" rel="noopener">81 comments</a>
+        <a class="read" href="https://www.marginalia.nu/log/a_141_marginalia_update/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">03</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F" target="_blank" rel="noopener">Gemini refused to give me the lyrics to Twinkle Twinkle Little Star</a></h2>
+      <p>A user reported that Google&#x27;s Gemini chatbot refused to provide the full lyrics to &quot;Twinkle Twinkle Little Star,&quot; a public-domain nursery rhyme, even though the article itself reproduces the complete lyrics. The article lists all the verses, including the less common ones about the sun, the traveller, and the star watching through curtains. The user&#x27;s complaint is that Gemini would not output text that is freely available and not under copyright. The incident matters because it shows AI chatbots can block or refuse harmless requests, likely due to overly cautious filtering, which frustrates users seeking simple, legal content.</p>
+      <div class="meta">
+        <span>▲ 213 points</span><a href="https://news.ycombinator.com/item?id=50638320" target="_blank" rel="noopener">165 comments</a>
+        <a class="read" href="https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">04</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://github.com/lsernau/grh-lean" target="_blank" rel="noopener">Much shorter version of GRH Lean verification from Anthropic</a></h2>
+      <p>Anthropic has released a shorter version of a Lean 4 formal proof of the Riemann Hypothesis and the Generalized Riemann Hypothesis for Dirichlet L-functions, built on Mathlib and using only three standard axioms. The work is based on a proof by Levent Alpöge and was produced with Claude and Anthropic colleagues. It comes in two versions: a readable edition of about 300,000 lines and a compact edition of about 76,000 lines covering the same five theorems. The repository is a research artifact that is not maintained and does not accept contributions, and building it requires Lean v4.35.0 and a specific Mathlib commit, taking one to two hours on 12 cores. The proof has passed machine checks only: no mathematician has read it through, and no accompanying paper exists.</p>
+      <div class="meta">
+        <span>▲ 127 points</span><a href="https://news.ycombinator.com/item?id=50648050" target="_blank" rel="noopener">42 comments</a>
+        <a class="read" href="https://github.com/lsernau/grh-lean" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">05</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://noahbuilt.it/writing/qwen-on-5600-lambdas" target="_blank" rel="noopener">Serving Qwen via AWS Lambdas for fun and 80x negative profit</a></h2>
+      <p>A developer at Bevyl tested whether a small AI model could run on AWS Lambda functions instead of GPUs. He used H2O-Lightning, a fine-tune of Qwen3.5-4B, and split the model&#x27;s 32 layers across 5,600 Lambda jobs that each read from and wrote to S3 storage. The setup worked, but reading a 4,000-token document took 17 seconds and cost 3.4 cents, or $8.40 per million tokens, compared with $0.10 per million tokens for Google&#x27;s hosted Gemini Decision 1. That makes the Lambda approach more than 80 times more expensive. The developer concluded that large matrix multiplications need GPUs and that CPU time offers no cost savings.</p>
+      <div class="meta">
+        <span>▲ 127 points</span><a href="https://news.ycombinator.com/item?id=50638070" target="_blank" rel="noopener">20 comments</a>
+        <a class="read" href="https://noahbuilt.it/writing/qwen-on-5600-lambdas" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">06</span>
+        <span class="source">Hacker News</span>
+      </div>
+      <h2><a href="https://www.proofatlas.ai/open-problems/" target="_blank" rel="noopener">Top open problems in mathematics ranked by LLM-assessed importance</a></h2>
+      <p>ProofAtlas has published a ranking of the top 500 open problems in mathematics, ordered by importance as judged by large language models rather than by expert consensus. The ranking works by having LLMs compare pairs of problems, with a reliability-weighted model combining those judgments; the model-family weights are OpenAI 1.00, Claude 1.00, GLM 0.95, and DeepSeek 0.90. P versus NP ranks first and the Riemann Hypothesis second, each with a narrow uncertainty range from the ranking procedure. The site says nearby ranks can be uncertain and that the ranking is not a forecast of which problems will be solved next. It also notes that status notes cover 176 of the 500 entries and are not a fresh literature review of the whole list.</p>
+      <div class="meta">
+        <span>▲ 99 points</span><a href="https://news.ycombinator.com/item?id=50637871" target="_blank" rel="noopener">50 comments</a>
+        <a class="read" href="https://www.proofatlas.ai/open-problems/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">07</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/" target="_blank" rel="noopener">S&amp;P considers Nvidia credit downgrade over governance and ‘key man’ risks</a></h2>
+      <p>S&amp;P Global Ratings is reviewing whether to downgrade Nvidia&#x27;s credit rating, citing weak executive oversight, a lack of succession planning, and &quot;key man risk&quot; tied to CEO Jensen Huang. The review follows the ouster and reinstatement of Huang, and S&amp;P expects to finish within 90 days, possibly cutting the rating from AA to AA-. Nvidia would stay investment-grade, but a downgrade could raise its borrowing costs. It matters more broadly because Nvidia backstops neoclouds and other infrastructure companies with weak credit, so a lower rating could make their debt costlier or force them to post more collateral. In August, Nvidia announced plans to arrange $500 billion in AI infrastructure financing with six financial institutions, originally guaranteeing 25% of the loans, though lenders had already been demanding larger guarantees.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">08</span>
+        <span class="source">TechCrunch</span>
+      </div>
+      <h2><a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/" target="_blank" rel="noopener">OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work</a></h2>
+      <p>OpenAI has begun rolling out a unified Chat and Work experience in ChatGPT to a small group of Pro subscribers, product lead Thibault Sottiaux announced on X. Under the new system, Chat and Work share a single usage meter, though conversations using the Instant model stay unlimited and don&#x27;t count toward the shared allowance. An OpenAI spokesperson told TechCrunch that while most users won&#x27;t see more frequent usage resets, a small fraction of the heaviest users may hit their limits sooner. Some subscribers have criticized the change on social media and OpenAI&#x27;s community forum, fearing less access to advanced reasoning models at the same subscription price. OpenAI plans to bring shared usage limits more broadly in December, according to its support page. The change matters because it affects how much heavy users can access for the same fee, and it comes as AI companies face rising infrastructure costs and growing demand.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">09</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent" target="_blank" rel="noopener">Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future</a></h2>
+      <p>Google filed a patent last May for a system called My Channel, which was published last week and first spotted by Patentlyze. The system would use a person&#x27;s demographic data, viewing history, IP address, GPS location, and age details to write prompts for a large language model, which would then generate personalized AI videos and ads on Google&#x27;s servers. According to the patent, My Channel could produce entire movies in various genres and could create digital avatars of users and make them the main character of the content. The patent has been rejected, but Google might appeal or resubmit an amended version. The article argues this matters because such a feed would keep users inside their own tastes and avoid exposure to new or human-made art, and because video models can mimic existing films but cannot create with real creative intention.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">10</span>
+        <span class="source">The Verge</span>
+      </div>
+      <h2><a href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers" target="_blank" rel="noopener">FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space</a></h2>
+      <p>The FCC has approved SpaceX&#x27;s plan to deploy up to 1 million AI chip-equipped satellites as part of its &quot;Starmind&quot; initiative, which aims to capture solar energy in space to power AI capabilities on Earth. The approval requires SpaceX to deploy at least one satellite by 2033 and reach the 1 million satellite milestone by 2040. The FCC also deferred SpaceX&#x27;s request to dispose of satellites above 600km in &quot;graveyard&quot; orbits, saying the company hasn&#x27;t provided sufficient information about its disposal plans. SpaceX says Starmind will transmit data to Earth using high-speed lasers connected to Starlink, and it plans to produce satellite chips at an upcoming Terafab facility. This is the first FCC approval for a full constellation of AI satellites, as other companies like Google and Blue Origin also pursue space-based AI data centers.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">11</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/" target="_blank" rel="noopener">Ars Live recap: Don’t expect military attacks on data centers to stop</a></h2>
+      <p>Amazon data centers in the Middle East were attacked by military forces for the first time this year, and Russia and Ukraine carried out an unusual number of drone strikes on each other&#x27;s data centers. Ars Technica hosted a live discussion with Joseph Jarnecki of the Royal United Services Institute about what these attacks mean for cloud services. Jarnecki said public cloud data centers have become military targets partly because militaries use civilian cloud infrastructure for tasks like battlefield management systems, which can make those sites legitimate military objects under the principles of targeting. He also said cheap kamikaze drones can cause disproportionate economic damage, estimating the cost ratio between Iran&#x27;s Shahed drones and the value of the Gulf data centers they target at 100 times or more. The discussion also covered how Ukraine worked to protect its cloud infrastructure after Russia&#x27;s full-scale invasion in February 2022.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/gadgets/2026/11/ars-live-recap-dont-expect-military-attacks-on-data-centers-to-stop/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">12</span>
+        <span class="source">Ars Technica</span>
+      </div>
+      <h2><a href="https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/" target="_blank" rel="noopener">AI may soon change what it means to be a theoretical physicist</a></h2>
+      <p>A theoretical physicist, Suvrat Raju, built a private test of hard physics problems that had never appeared online, and leading AI models solved about 60 percent of them at first, with GPT-6 Astra later solving nearly 90 percent. When given the human-written answers, Astra argued that some of the humans were wrong, and it turned out to have answered 49 of 50 problems correctly, at under $3 of compute per answer. Raju said the benchmark hit the ceiling of well-defined calculations people can do, and he will not make a second version. Other physicists, including Ed Witten and Juan Maldacena, now use AI models in their work, and submissions to the high-energy physics theory section of arXiv rose about 30 percent from January to October compared with the same period last year. The change matters because AI is speeding up calculations and research in physics, while raising questions about how to train the next generation of physicists and how to handle the flood of papers.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <article class="story">
+      <div class="story-top">
+        <span class="number">13</span>
+        <span class="source">MIT Technology Review</span>
+      </div>
+      <h2><a href="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/" target="_blank" rel="noopener">AI is straining America’s open records systems</a></h2>
+      <p>In Panton, Vermont, a town of 660 people, town clerk Kyle Rowe handled many roles, including budgets, vendor payments, property tax disputes, zoning supervision, elections, and public records requests. The article reports that America&#x27;s open records systems are now being strained by AI, though the excerpt provided does not include the specific details of how that strain occurs or who else is involved. It matters because small local offices like Panton&#x27;s, where one person manages many duties, are part of the public records system that AI is affecting.</p>
+      <div class="meta">
+        
+        <a class="read" href="https://www.technologyreview.com/2026/11/25/1149702/ai-is-straining-americas-open-records-systems/" target="_blank" rel="noopener">Read the full article →</a>
+      </div>
+    </article>
+    <nav class="bottom"><a href="index.html">Latest</a></nav>
+    <section class="past"><h3>Past days</h3><ul><li><a href="2026-11-24.html">2026-11-24</a></li><li><a href="2026-11-23.html">2026-11-23</a></li><li><a href="2026-11-22.html">2026-11-22</a></li><li><a href="2026-11-21.html">2026-11-21</a></li><li><a href="2026-11-20.html">2026-11-20</a></li><li><a href="2026-11-19.html">2026-11-19</a></li><li><a href="2026-11-18.html">2026-11-18</a></li><li><a href="2026-11-17.html">2026-11-17</a></li><li><a href="2026-11-16.html">2026-11-16</a></li><li><a href="2026-11-15.html">2026-11-15</a></li><li><a href="2026-11-14.html">2026-11-14</a></li><li><a href="2026-11-13.html">2026-11-13</a></li><li><a href="2026-11-12.html">2026-11-12</a></li><li><a href="2026-11-11.html">2026-11-11</a></li><li><a href="2026-11-10.html">2026-11-10</a></li><li><a href="2026-11-09.html">2026-11-09</a></li><li><a href="2026-11-08.html">2026-11-08</a></li><li><a href="2026-11-07.html">2026-11-07</a></li><li><a href="2026-11-06.html">2026-11-06</a></li><li><a href="2026-11-05.html">2026-11-05</a></li><li><a href="2026-11-04.html">2026-11-04</a></li><li><a href="2026-11-03.html">2026-11-03</a></li><li><a href="2026-11-02.html">2026-11-02</a></li><li><a href="2026-11-01.html">2026-11-01</a></li><li><a href="2026-10-31.html">2026-10-31</a></li><li><a href="2026-10-30.html">2026-10-30</a></li><li><a href="2026-09-29.html">2026-09-29</a></li><li><a href="2026-09-28.html">2026-09-28</a></li><li><a href="2026-09-27.html">2026-09-27</a></li><li><a href="2026-09-26.html">2026-09-26</a></li></ul></section>
+  </main>
+</body>
+</html>
